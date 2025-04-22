@@ -1,0 +1,50 @@
+@charset " utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+/* 
+font-family: "Montserrat", sans-serif;
+font-family: "Adamina", serif;
+font-family: "Mrs Saint Delafield", cursive;
+font-family: "Abril Fatface", serif;
+font-family: "Pretendard Variable";
+*/
+
+@font-face {
+    font-family: 'Cafe24Simplehae';
+    src: url('../font/Cafe24Simplehae-v2.0.woff') format('woff');
+    font-weight: 400;
+    font-style: 'normal';
+}
+
+
+/* 오션트립 */
+@font-face {
+    font-family: 'Stunning';
+    src: url('../font/AnyConv.com__STUNNING.woff') format('woff');
+    font-weight: 700;
+    font-style: 'Bold';
+}
+
+/* 뚜레쥬르 */
+@font-face {
+    font-family: 'Ghanachocolate';
+    src: url('../font/Ghanachocolate.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'bookandBatang';
+    src: url('../font/bookandbatang_Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bookandBatang';
+    src: url('../font/bookandbatang_SemiBold.woff') format('woff');
+    font-weight: 700;
+    font-style: bold;
+}
+
+/* 핀픽 */

@@ -1,0 +1,152 @@
+UI/UX DESIGN
+PORTFOLIO
+Intro
+Ability
+Projects
+Contact
+2025 PORTFOLIO
+Intro
+Intro
+Scuplture
+Profile
+저는 석고처럼 견고하고, 덩굴처럼 유연한 디자인을 지향합니다.
+안정적인 시스템을 기반으로, 다양한 디바이스에서도 동일한 경험을 설계하고자 합니다.
+변화하는 트렌드와 사용자의 니즈에 유연하게 대응하며,변화하는 흐름 속에서도 중심을 지키는 디자인을 추구합니다.
+Projects
+Contact
+About
+name
+정 혜 림
+Hye rim Jeong
+birth
+1997.10.16
+email
+hy3riim@gmail.com
+Intro
+Responsible
+견고한 원칙으로 유연한 디자인을 만들어 나가는
+UI/UX디자이너 정혜림 입니다.
+Diligent
+Profile
+certificate
+Projects
+skills
+2025
+웹디자인 기능사
+2025
+컴퓨터그래픽스운용기능사
+Illustrator
+Photoshop
+Figma
+Javascript
+React
+Jquery
+Html/CSS
+Projects
+Logo
+Overview
+뚜레쥬르의 브랜드 철학인 
+"건강한 재료로 매일 신선한 빵을 제공한다"는 가치를 기반으로, 
+브랜드의 대표 컬러인 ‘English Green’을 중심으로 디자인을 구성하였습니다. 
+사용자가 마치 영국의 베이커리를 방문한 듯한 경험을 느낄 수 있도록, 
+감성적이고 정통적인 분위기를 담아 웹사이트를 제작하였습니다.
+Intro
+project5
+Concept
+Typography
+가나 초콜릿체
+ocean trip
+Wellness
+GhanaChocolate
+건강함
+Profile
+Project 2
+only one
+Color
+리브랜딩 디자인 - 개인 프로젝트
+유일함
+Tourlesjours
+#1B4D3F
+#B29070
+#EDDECD
+#302433
+fresh
+신선함
+main
+sub1
+sub2
+text
+Projects
+fin-pick
+Tools
+Headline
+View detail
+project4
+매일 아침 굽는 작은 행복
+어서오세요, 뚜레쥬르 입니다.
+Visit Site
+Contact
+hy3riim@gmail.com
+Send
+
+
+
+
+Logo
+Overview
+복잡한 금융 정보를 쉽고 빠르게 확인할 수 있는 금융 앱입니다. 
+최근 금융서비스 슈퍼 앱 수요가 증가하는 흐름에 맞춰, 
+사용자가 필요한 정보만 골라 금융 정보를 한눈에 조회할 수 있도록 구성했으며, 
+심플하고 직관적인 디자인으로 
+사용자가 앱을 편리하게 이용할 수 있도록 하는 것을 중점으로 제작하였습니다.
+Concept
+Typography
+프리텐다드
+Pretendard
+trust
+신뢰
+Convenince
+편의
+simple
+심플
+Color
+#92A0FD
+#00B7CF
+#333333
+main
+sub
+text
+Tools
+Headline
+손쉽게, 필요한 것만 
+쏙쏙 골라서 해결할 수 있는 
+통합 금융 앱, 핀픽
+
+
+
+Logo
+Overview
+방대한 여행 정보 속에서 
+바다 여행만을 쉽고 빠르게 찾을 수 있는 사이트입니다. 
+바다 여행에 필요한 모든 정보를 빠르게 찾을 수 있도록 직관적인 레이아웃을 설계했으며, 여행을 떠나는 신나는 기분을 담아 다이내믹한 레이아웃을 디자인 요소를 적용했습니다. 
+Typography
+스터닝체
+STUNNING
+Concept
+useful
+유용한
+Activity
+액티비티
+Trendy
+트렌디
+Color
+#8AD1F4
+#3D363F
+main
+text
+Tools
+Headline
+꿈꾸던 여행을 현실로
+원하던 여행의 시작, 오션트립입니다.
+View detail
+Visit Site

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livart</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+        rel="stylesheet" />
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap" data-scroll-container>
+        <header id="header">
+            <h1><a href="#">
+                    <img src="./img/livart_logo.png" alt="livart">
+                </a></h1>
+            <nav class="">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="#">홈</a>
+                        <ul>
+                            <li><a href="#">인테리어</a></li>
+                            <li><a href="#">거실</a></li>
+                            <li><a href="#">침실</a></li>
+                            <li><a href="#">주방</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">가구</a>
+                        <ul>
+                            <li><a href="#">소파</a></li>
+                            <li><a href="#">거실장</a></li>
+                            <li><a href="#">테이블/매트리스</a></li>
+                            <li><a href="#">옷장/드레스룸</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">리모델링</a>
+                        <ul>
+                            <li><a href="#">인테리어 패키지</a></li>
+                            <li><a href="#">부분 시공 패키지</a></li>
+                            <li><a href="#">주방</a></li>
+                            <li><a href="#">욕실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">오피스</a>
+                        <ul>
+                            <li><a href="#">컴퓨터책상</a></li>
+                            <li><a href="#">의자</a></li>
+                            <li><a href="#">책장/옷장/서랍</a></li>
+                            <li><a href="#">스크린/파티션</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">세계가구</a>
+                        <ul>
+                            <li><a href="#">소파</a></li>
+                            <li><a href="#">거실테이블</a></li>
+                            <li><a href="#">키즈/주니어</a></li>
+                            <li><a href="#">식탁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공방</a>
+                        <ul>
+                            <li><a href="#">ARTIST</a></li>
+                            <li><a href="#">CLASS</a></li>
+                            <li><a href="#">PRODUCT</a></li>
+                            <li><a href="#">EVENT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">중고가구</a>
+                        <ul>
+                            <li><a href="#">장롱</a></li>
+                            <li><a href="#">드레스룸</a></li>
+                            <li><a href="#">침대</a></li>
+                            <li><a href="#">수납</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="r_menu">
+                <div class="sel">
+                    <p><strong>KOR</strong><span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span></p>
+                    <ul>
+                        <li><a href="#"><strong>ENG</strong></a></li>
+                        <li><a href="#"><strong>JPN</strong></a></li>
+                    </ul>
+                </div><!-- //.sel -->
+            </div><!-- //.r_menu -->
+        </header>
+        <main>
+            <div class="custom_cursor"></div>
+            <section class="main_visual">
+                <div class="main_slide_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide main1"><a href="#">
+                                <div class="tit">
+                                    <p>무채색 하루 속, 작은 디테일이 하루를 바꿔줘요. 디자인으로 채우는 나만의 워크룸.</p>
+                                    <h2>일하는 공간도 예뻐야 하니까</h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main2"><a href="#">
+                                <div class="tit">
+                                    <p>익숙하지만 특별한 일상이 이 공간에서 시작됩니다</p>
+                                    <h2>내가 머무는 이유가 되는 공간</h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main3"><a href="#">
+                                <div class="tit">
+                                    <p>기능을 넘은 공간의 미학. 감각적인 사무 환경이 곧 당신의 브랜드가 됩니다.</p>
+                                    <h2>디자인으로 완성하는 업무의 품격</h2>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div><!-- //.main_slide_wrap -->
+
+                <!-- 커스텀 페이지네이션 -->
+                <div class="vertical-pagination">
+                    <!-- 현재 슬라이드 번호 -->
+                    <div class="num"><span class="swiper-pagination-current">01</span> / 03</div>
+
+                    <!-- 중앙 새로라인 (진행도 표시) -->
+                    <div class="swiper-pagination-line">
+                        <!-- 실제로 채워질 부분 -->
+                        <div class="swiper-pagination-line-fill"></div>
+                    </div>
+                    <!-- 위/아래 화살표(버튼) -->
+                    <div class="swiper-pagination-buttons">
+                        <div class="prev">
+                            <span class="material-symbols-outlined">
+                                keyboard_arrow_up
+                                </span>
+                        </div>
+                        <div class="next"><span class="material-symbols-outlined">
+                                keyboard_arrow_down
+                            </span></div>
+                    </div>
+                </div>
+            </section><!-- //.main_visual -->
+            <section class="txt_area">
+                <h2>
+                    <strong class="tit">하루를 <span>계획</span> 하고, 나를 <span>중심</span>에 두는 공간.
+                    </strong>
+                    <b class="tit">리바트 하움은 단지 가구가 아니라, <br>
+                        <span> 더 나은 하루를 위한 시작입니다. </span></b>
+                    <em class="tit">LIVART HAUM</em>
+                </h2>
+            </section>
+            <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">LIVART</div>
+                        <ul class='list'>
+                            <li>
+                                Life is Living Art, LIVART Life is Living Art, LIVART
+                            </li>
+                            <li>
+                                Life is Living Art, LIVART Life is Living Art, LIVART
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="s_tit">
+                        <h2 class="">our value & vision</h2>
+                        <p>
+                            집에 대한 모든 것, 새로운 가치를 더합니다.
+                        </p>
+                    </div>
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <h3>Differentiation</h3>
+                                    <div class="line"></div>
+                                    <p>탁월한 디자인과 스타일로 차원 높은 경험을 제안합니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <h3>Value</h3>
+                                    <div class="line"></div>
+                                    <p>세심한 디테일과 품질로 감동과 자부심을 전달합니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <h3>Sincerity</h3>
+                                    <div class="line"></div>
+                                    <p>신뢰를 기본으로, 내재화된 역량을 담아 제품을 만듭니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="special_product">
+                <div class="s_tit">
+                    <h2 class="">special product</h2>
+                    <p>스페셜 작품들을 한눈에<br>
+                        여러분의 다양한 라이프 스타일 디자인을 추구합니다.
+                    </p>
+                </div><!-- //.s_tit -->
+                <ul>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p1.png" alt=""></div>
+                        <div class="name">
+                           <strong>클레어 소파</strong>
+                           <p>고밀도 패브릭과 저채도의 뉴트럴 컬러로 완성한 프리미엄 3인용 소파</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p2.png" alt=""></div>
+                        <div class="name">
+                            <strong>아르덴 라운지체어</strong>
+                           <p>쉘 곡선이 감싸는 포근함, 공간에 감성을 더하는 한 점</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p3.png" alt=""></div>
+                        <div class="name">
+                            <strong>노르 책상</strong>
+                            <p>미니멀한 서재를 위한 컴팩트 데스크, 케이블 숨김 구조로 설계</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p4.jpg" alt=""></div>
+                        <div class="name">
+                            <strong>에이라 침대 프레임</strong>
+                           <p>라운드형 헤드와 저상 디자인으로 완성된 웰니스 침실의 중심</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p5.png" alt=""></div>
+                        <div class="name">
+                            <strong>리트 원목 수납장</strong>
+                           <p>공간을 해치지 않는 저채도 색감의 모듈형 서랍장</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p6.png" alt=""></div>
+                        <div class="name">
+                            <strong>에일 플로어 스탠드</strong>
+                            <p>간접 조명 기능을 갖춘 패브릭 쉐이드 조명, 심플한 라인</p> 
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p7.png" alt=""></div>
+                        <div class="name">
+                            <strong>느와르 삼각 스탠드</strong>
+                            <p>심플한 블랙 바디로 공간에 모던한 무드를 더하는 조명</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p8.png" alt=""></div>
+                        <div class="name">
+                            <strong>포그 화이트 소파</strong>
+                           <p>부드러운 곡선과 따뜻한 컬러감이 조화를 이루는 2~3인용 패브릭 소파</p>
+                        </div>
+                    </li>
+                </ul>
+            </section><!-- //.special_product -->
+            <section class="business">
+                <div class="s_tit">
+                    <h2>Style Collection</h2>
+                    <p>공간이 전하는 온도와 결, 스타일로 나누어 담은 리바트하움의 컬렉션</p>
+                    </p>
+                    <div class="btn">
+                        <span class="material-symbols-outlined prev">
+                            west
+                        </span>
+                        <span class="material-symbols-outlined next">
+                            east
+                        </span>
+                    </div>
+                </div><!-- //.s_tit -->
+
+                <div class="slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b1.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <!-- <img src="img/logo1.png" alt="프로젝트 서브로고"> -->
+                                    <span>Nature Balance</span>
+                                    <h3>비워낸 자리마다 따뜻함이 머무는 미니멀의 미학</h3>
+                                    <p>부드러운 톤과 여백이 만드는 절제된 감성</p>
+                                    <div class="tag">
+                                        <ul>
+                                           <li>#미니멀인테리어</li>
+                                           <li>#따뜻한무드</li>
+                                           <li>#심플한공간</li>
+                                           <li>#뉴트럴톤</li>
+                                           <li>#여백의미학</li>
+                                           <li>#편안한집</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b2.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <!-- <img src="img/logo2.png" alt="프로젝트 서브로고"> -->
+                                    <span>Soft Minimal</span>
+                                    <h3>햇살과 바람, 나무결이 머무는 자연주의 리빙</h3>
+                                    <p>나무, 흙, 빛으로 완성된 내추럴 무드</p>
+                                    <div class="tag">
+                                        <ul>
+                                          <li>#내추럴인테리어</li>
+                                          <li>#우드무드</li>
+                                          <li>#햇살가득집</li>
+                                          <li>#식물과함께</li>
+                                          <li>#차분한공간</li>
+                                          <li>#웰니스홈</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b3.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <!-- <img src="img/logo3.png" alt="프로젝트 서브로고"> -->
+                                    <span>Modern Classic</span>
+                                    <h3> 낮은 목소리로 말하는 프리미엄, 절제된 고급스러움</h3>
+                                    <p>컬러와 선을 덜어낸 절제된 프리미엄</p>
+                                    <div class="tag">
+                                        <ul>
+                                           <li>#모던클래식</li>
+                                           <li>#프리미엄무드</li>
+                                           <li>#세련된공간</li>
+                                           <li>#톤온톤인테리어</li>
+                                           <li>#디테일있는집</li>
+                                           <li>#고급스러운분위기</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b4.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <!-- <img src="img/logo4.png" alt="프로젝트 서브로고"> -->
+                                    <span>Cozy Neutral</span>
+                                    <h3>천천히 스며드는 감성, 포근한 쉼의 결을 담다</h3>
+                                    <p>감싸 안는 곡선과 부드러운 텍스처의 조화</p>
+                                    <div class="tag">
+                                        <ul>
+                                         <li>#코지인테리어</li>
+                                         <li>#베이지톤무드</li>
+                                         <li>#포근한분위기</li>
+                                         <li>#감성공간</li>
+                                         <li>#러그인테리어</li>
+                                         <li>#따뜻한쉼</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b5.jpg" alt=""></div>
+                                <div class="txt_box">
+                                    <!-- <img src="img/logo5.png" alt="프로젝트 서브로고"> -->
+                                    <span>Urban Frame</span>
+                                    <h3>도심 속 고요를 채우는 여백, 단정하게 흐르는 어반 무드</h3>
+                                    <p>차가움과 따뜻함 사이, 도심형 미니멀 스타일</p>
+                                    <div class="tag">
+                                        <ul>
+                                           <li>#어반인테리어</li>
+                                           <li>#그레이무드</li>
+                                           <li>#모노톤공간</li>
+                                           <li>#시티하우스</li>
+                                           <li>#심플모던</li>
+                                           <li>#차분한느낌</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="vid">
+                <div class="s_tit">
+                    <h2 class="">Living Easy, <br>
+                         Living Well</h2>
+                    <p>햇살이 천천히 번지는 거실, 나무의 결이 말을 거는 공간에서 <br>
+                        리바트하움은 하루의 쉼을 디자인합니다</p>
+                </div><!-- //.s_tit -->
+                <figure class="vid_box">
+                    <video src="img/video2.mp4" loop autoplay muted playsinline></video>
+                </figure>
+            </section>
+            <section class="trust">
+                <div class="s_tit">
+                    <h2>LIVART CARE SERVICES</h2>
+                    <p>일상에 필요한 실용성과 감성을 모두 담은 리바트하움의 라이프 솔루션, <br>
+                        주거부터 비즈니스까지 다양한 공간에 꼭 맞는 해결책을 제공합니다.</p>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li class="sl1"><a href="#">
+                                <h3>리바트집테리어 <br> 상담신청 프로모션</h3>
+                                <p>우리집 리모델링 시작과 끝, 리바트 집테리어</p>
+                            </a></li>
+                        <li class="sl2"><a href="#">
+                                <h3>기업 고객 이전 설치 서비스</h3>
+                                <p>리바트 전문 설치팀의 노하우로 사무실 이전을 빠르고 간편하게</p>
+                            </a></li>
+                        <li class="sl3"><a href="#">
+                                <h3>정성과 시간이 만들어 낸 가치있는 공예품</h3>
+                                <p>소중한 사람, 그리고 나를 위한 선물</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="news">
+                <div class="s_tit">
+                    <h2>Latest Updates</h2>
+                    <p>일상 속 공간의 따뜻한 변화, 지금 만나보세요.</p>
+                    <a href="#" class="more">View More &gt;</a>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="con swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/t1.png" alt=""></div>
+                                <span>신제품 출시</span>
+                                <p class="txt">
+                                    햇살 가득한 거실을 위한 우드 앤 린넨 시리즈 공개
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t2.jpg" alt=""></div>
+                                <span>디자인 이야기</span>
+                                <p class="txt">
+                                    영국 컨트리하우스에서 영감받은 올 봄 인테리어 트렌드
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t3.jpg" alt=""></div>
+                                <span>이벤트</span>
+                                <p class="txt">
+                                    '리바트하움과 함께하는 주말 홈파티'
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t4.png" alt=""></div>
+                                <span>콜라보 소식</span>
+                                <p class="txt">
+                                    감성 플로리스트 브랜드_블룸앤바이브 <br> 협업 컬렉션
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t5.jpg" alt=""></div>
+                                <span>공간 제안</span>
+                                <p class="txt">
+                                   오피스 이전을 위한 스마트 맞춤 설치 서비스 오픈
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t6.png" alt=""></div>
+                                <span>고객 후기</span>
+                                <p class="txt">
+                                    '리바트 하움 덕분에 삶의 온도가 올라갔어요.' - 따뜻한 공간 이야기
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t7.png" alt=""></div>
+                                <span>디자이너 인터뷰</span>
+                                <p class="txt">
+                                    "우리는 감정을 설계합니다." - 리바트 디자이너의 이야기
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t8.png" alt=""></div>
+                                <span>트렌드 리포트</span>
+                                <p class="txt">
+                                    2025 라이프스타일 키워드 - 공간에도 '쉼'이 필요하다.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>LIVART</h3>
+            <p>공간에 감정을 더하다.<br>
+              <span>리바트</span> 는 가구를 넘어, 삶의 분위기를 디자인합니다.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
