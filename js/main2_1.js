@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // pin: true,
       // pinSpacing: false,
       scrub: 0.2,
-      markers: true, // 디버깅용
+      // markers: true, // 디버깅용
     },
     opacity: 0.4,
     filter: "blur(8px)",
