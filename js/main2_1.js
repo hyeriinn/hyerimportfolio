@@ -147,7 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
       anticipatePin: 1,
       // markers: true, // 디버깅용
       onEnter: () => rock.classList.add("behind_profile"),
-      onLeaveBack: () => rock.classList.remove("behind_profile")
+      onLeaveBack: () => {rock.classList.remove("behind_profile"),
+        gsap.set(rock,{filter : 'blur(0)', opacity: 1})}
     }
 
   );
