@@ -202,8 +202,8 @@ document.addEventListener("DOMContentLoaded", () => {
     pinSpacing: false,
     scrub: true,             // ★ 스크럽 넣어 스크롤과 동기화
     // markers: true           // (원하면 디버깅용)
-    onEnter: () => { gsap.set('nav ul li', { color: '#181919', borderBottom: '1px solid #181919' }) },
-    onLeaveBack: () => { gsap.set('nav ul li', { color: '#ffffff', borderBottom: '1px solid #ffffff' }) }
+    onEnter: () => { gsap.set('nav ul li', { display : 'none'}) },
+    onLeaveBack: () => { gsap.set('nav ul li', { display : 'block' }) }
   });
 
   CONTENT_ITEMS.forEach((content, index) => {

@@ -26,7 +26,7 @@
 
 html,
 body {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     /* overflow: hidden; */
 }
 
@@ -48,7 +48,7 @@ nav {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 240px;
+    width: 200px;
     z-index: 10;
 }
 
@@ -596,7 +596,7 @@ transform: translateY(0); } */
     display: flex;
     align-items: flex-start;
     gap: 50px;
-    background: #F3F0DB;
+    background: #F8F6EB;
     padding-right: 300px;
     height: 500vh;
 }
@@ -739,7 +739,10 @@ transform: translateY(0); } */
     /* position: absolute; */
     /* background: yellow; */
 }
+#projects .projects_all .project4{
+    background: url(../img/project_frame_project4.png) center/contain no-repeat;
 
+}
 
 /* project_detail */
 
@@ -888,7 +891,7 @@ transform: translateY(0); } */
 
 #projects .projects_all .project_detail .detail_contents .overview p strong {
     color: #1B4D3F;
-    font-family: var(--Montserrat);
+    font-family: var(--suit);
     font-weight: 700;
 
 }
@@ -1154,6 +1157,55 @@ transform: translateY(0); } */
 
 }
 
+#projects .projects_all .project4 .detail_contents .color ul li:nth-child(1) span {
+    background: #B6A999;
+}
+
+#projects .projects_all .project4 .detail_contents .color ul li:nth-child(2) span {
+   
+    background: #0b5578;
+
+}
+
+#projects .projects_all .project4 .detail_contents .concept .concept1 {
+    background: rgba(182, 169, 153, 0.3);
+
+}
+
+#projects .projects_all .project4 .detail_contents .concept .concept2 {
+    margin-top: -24px;
+    background: rgba(182, 169, 153, 0.6);
+
+}
+
+#projects .projects_all .project4 .detail_contents .concept .concept3 {
+    margin-top: -24px;
+    background: rgba(182, 169, 153, 0.9);
+}
+
+
+#projects .projects_all .project4 .detail_contents .typo .typo_bottom {
+    /* color: #1B4D3F; */
+    font-family: var(--suit);
+    font-weight: 700;
+}
+#projects .projects_all .project4 .detail_contents .headline p{
+    font-family: var(--suit);
+    line-height: 1;
+
+}
+
+
+#projects .projects_all .project4 .detail_contents .overview p {
+    font-family: var(--suit);
+
+    line-height: 1.8;
+}
+#projects .projects_all .project4 .detail_contents .overview p strong{
+    color: #0b5578;
+    font-weight: 700;
+}
+
 
 #projects .project_detail .project_go {
     width: 244px;
@@ -1165,9 +1217,15 @@ transform: translateY(0); } */
     gap: 8px;
 }
 
+#projects .project4 .project_go {
+    justify-content: flex-end;
+    
+}
+
+
 #projects .project_detail .project_go div {
     width: 100%;
-    flex: 1;
+    height: 50%;
     border: 2px solid var(--main-black);
     border-radius: 30px;
     background: #fff;
