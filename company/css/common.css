@@ -588,36 +588,36 @@ section.txt_area h2 em.tit {
 
 
 
-/* .sticky_con ul li .icon {
+.sticky_con ul li .icon {
     width: 200px;
     height: 200px;
     background-size: cover;
-    border-radius: 26px;
+    /* border-radius: 26px; */
     margin-bottom: 20px;
-    box-shadow: 0 5px 20px rgba(28, 3, 37, 0.25);
+    /* box-shadow: 0 5px 20px rgba(28, 3, 37, 0.25); */
     transition: all 0.3s ease;
 }
- */
-/* .sticky_con ul li:hover .icon {
-    box-shadow: 0 11px 30px rgba(28, 3, 37, 0.3);
+ 
+.sticky_con ul li:hover .icon {
+    /* box-shadow: 0 11px 30px rgba(28, 3, 37, 0.3); */
     transform: translateY(-5px);
-}
+} 
 
 .sticky_con ul li:nth-child(1) .icon {
     background-image: url(../img/icon1.png);
-    background-color: rgba(156, 163, 15, 0.831);
+    /* background-color: rgba(156, 163, 15, 0.831); */
 }
 
 .sticky_con ul li:nth-child(2) .icon {
     background-image: url(../img/icon2.png);
-    background-color: rgba(15, 163, 153, 0.485);
+    /* background-color: rgba(15, 163, 153, 0.485); */
 }
 
 .sticky_con ul li:nth-child(3) .icon {
     background-image: url(../img/icon3.png);
-    background-color: rgba(123, 15, 163, 0.712);
+    /* background-color: rgba(123, 15, 163, 0.712); */
 }
- */
+
 .sticky_con ul li h3 {
     font-size: 2.8rem;
     font-weight: 600;
@@ -770,7 +770,7 @@ section.txt_area h2 em.tit {
 }
 
 .business .slide ul li .txt_box img {
-    height: 40px;
+    height: 16px;
     margin-bottom: 30px;
 }
 

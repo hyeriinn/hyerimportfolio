@@ -262,7 +262,7 @@ section h2 {
 #profile {
     width: 100%;
     position: relative;
-    min-height: 200vh;
+    min-height: 240vh;
 }
 
 #profile .profile_contents {
@@ -297,6 +297,7 @@ section h2 {
     align-items: flex-start;
     gap: 12px;
     margin-right: -5px;
+    border: 50px;
 }
 
 #profile .profile_contents .info .info_txt div {
@@ -345,9 +346,9 @@ section h2 {
     width: 700px;
     height: 284px;
     /* background: #ddd; */
-    position: relative;
+    position: absolute;
     left: 0;
-    top: 150px;
+    top: 180px;
 }
 
 #profile .profile_contents .greet .greet_txt {
@@ -734,7 +735,7 @@ transform: translateY(0); } */
     justify-content: space-between;
     padding: 16px;
     margin-bottom: 120px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     /* position: absolute; */
     /* background: yellow; */
 }

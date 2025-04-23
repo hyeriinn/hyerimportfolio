@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-// ✅ <strong>, <br> 등 유지하면서 텍스트 분해
+  // ✅ <strong>, <br> 등 유지하면서 텍스트 분해
   function splitTextPreserveTags(element) {
     const walk = (node) => {
       if (node.nodeType === Node.TEXT_NODE) {
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     element.innerHTML = '';
     element.appendChild(result);
   }
+
 
   // ✅ rock 고정 위치 세팅
   const rock = document.querySelector(".rock");
@@ -119,11 +120,12 @@ document.addEventListener("DOMContentLoaded", () => {
       autoAlpha: 0,
       duration: 0.6,
     })
-    .from(".profile_contents .skill", { 
-      x:-100,
-      y: 100, 
-      autoAlpha: 0, 
-      duration: 0.6, })
+    .from(".profile_contents .skill", {
+      x: -100,
+      y: 100,
+      autoAlpha: 0,
+      duration: 0.6,
+    })
     .from(".profile_contents .certificate", {
       x: 100,
       y: 100,
@@ -147,13 +149,20 @@ document.addEventListener("DOMContentLoaded", () => {
       anticipatePin: 1,
       // markers: true, // 디버깅용
       onEnter: () => rock.classList.add("behind_profile"),
-      onLeaveBack: () => {rock.classList.remove("behind_profile"),
-        gsap.set(rock,{filter : 'blur(0)', opacity: 1})}
+      onLeaveBack: () => {
+        rock.classList.remove("behind_profile"),
+          gsap.set(rock, { filter: 'blur(0)', opacity: 1 })
+      },
+      onEnterBack: () => {gsap.set(rock, { filter: 'blur(0)', opacity: 1 })}
     }
 
   );
-
-
+  VanillaTilt.init(document.querySelector(".profile_contents"), {
+    max: 15,
+    speed: 400,
+    glare: false,
+    "max-glare": 0.2,
+  })
   // ✅ rock - projects 진입 시 이동
 
   const projectTL = gsap.timeline();
@@ -168,12 +177,12 @@ document.addEventListener("DOMContentLoaded", () => {
       end: "bottom bottom",
       // pin: true,
       // pinSpacing: false,
-      scrub: 0.2,
+      scrub: true,
       // markers: true, // 디버깅용
     },
     opacity: 0.4,
     filter: "blur(8px)",
-  
+
   });
 
   const SIDEBAR = document.querySelector(".project_left");
@@ -193,8 +202,8 @@ document.addEventListener("DOMContentLoaded", () => {
     pinSpacing: false,
     scrub: true,             // ★ 스크럽 넣어 스크롤과 동기화
     // markers: true           // (원하면 디버깅용)
-    onEnter: () => { gsap.set('nav ul li', { color: '#181919' ,borderBottom : '1px solid #181919'}) },
-    onLeaveBack: () => { gsap.set('nav ul li', { color: '#ffffff',borderBottom : '1px solid #ffffff' }) }
+    onEnter: () => { gsap.set('nav ul li', { color: '#181919', borderBottom: '1px solid #181919' }) },
+    onLeaveBack: () => { gsap.set('nav ul li', { color: '#ffffff', borderBottom: '1px solid #ffffff' }) }
   });
 
   CONTENT_ITEMS.forEach((content, index) => {
@@ -213,9 +222,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollTrigger.create({
     trigger: "#contact",
     start: "top center",
-    onEnter: () => {gsap.to(rock, { opacity: 0, duration: 0.5 }),gsap.set('nav ul li', { display : 'none'})},
+    onEnter: () => { gsap.to(rock, { opacity: 0, duration: 0.5 }), gsap.set('nav ul li', { display: 'none' }) },
     onEnterBack: () => gsap.to(rock, { opacity: 0.4, duration: 0.5 }),
 
-    onLeaveBack: () => { gsap.set('nav ul li', {display : 'block' }) }
+    onLeaveBack: () => { gsap.set('nav ul li', { display: 'block' }) }
   });
 });
