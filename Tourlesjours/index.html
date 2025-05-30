@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bread, food, cafe">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Hyerim Jeong">
+    <title>Tourlesjours</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/512300eeec.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"
+        integrity="sha512-i8BU+cmsrlyKOPFSCdO4x4wHXvjg6YIXy6K/PsPL0/3F89ccSgk06wDBP5FTyiGDzVNADQhal1dA1DHH2JB0Rw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main_style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">제품</a></li>
+                <li class="logo">
+                    <h1>
+                        <a href="#">
+                            <img src="img/logo.png" alt="tourlesjours"></a>
+                    </h1>
+                </li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">주문</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="ham">
+            <img src="./img/ham.png" alt="hamburger icon">
+        </button>
+    </header>
+    <div class="columns">
+        <div class="column_left" data-aos="fade-right" data-aos-duration="600">
+            <div class="light_toggle">
+                <button type="button" class="toggle_btn"></button>
+            </div><!-- //.light_toggle -->
+            <div class="flag_up">
+                <a href="#">
+                    <img src="./img/icon_goup.png" alt="위로가기">
+                    <p>위로가기</p>
+                </a>
+            </div><!-- //.flag_up -->
+        </div><!-- column_left -->
+        <div class="column_right" data-aos="fade-left" data-aos-duration="600">
+            <div class="flags">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon_search.png" alt="검색">
+                            <p>제품찾기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/icon_docu.png" alt="창업">
+                            <p>창업문의</p>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <img src="./img/icon_store.png" alt="매장">
+                            <p>매장찾기</p>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="img/icon_call.png" alt="전화">
+                            <p>고객센터</p>
+                        </a></li>
+                </ul>
+            </div><!-- //.flags -->
+        </div><!-- column_right -->
+    </div><!-- columns -->
+    <main>
+        <section class="main_visual">
+            <div class="txt_white">
+                <div class="txt_white_top">
+                    <em>매일 아침에 굽는,</em>
+                    <p>작은 행복</p>
+                </div><!-- //.txt_white_top -->
+                <h2>어서오세요, <strong>뚜레쥬르</strong> 입니다.</h2>
+            </div><!-- main_visual_txt -->
+
+        </section><!-- main_visual -->
+        <section class="swiper new">
+            <ul class="swiper-wrapper slide">
+                <li class="swiper-slide">
+                    <div class="new_inner">
+                        <div class="new_right">
+                            <div class="new_txt">
+                                <strong>NEW</strong>
+                                <h2>
+                                    <em>스트로베리</em> <br> 요거트 생크림 케이크
+                                </h2>
+                                <div class="txt_bottom">
+                                    딸기와 상큼한 요거트 생크림의 조합!
+                                    <p>
+                                        달콤한 딸기 꿀리를 샌드해 한 입 가득 먹으면 <br>
+                                        요거트 생크림이 기분좋게 퍼지는 케이크
+                                    </p>
+                                </div><!-- //.txt_bottom -->
+                            </div><!-- //.new_txt    -->
+                            <div class="new_go">
+                                <a href="#" class="detail">상세정보</a>
+                                <a href="#" class="order">주문하기</a>
+                            </div><!-- //.new_go -->
+                        </div><!-- //.new_right -->
+                        <div class="new_img">
+                            <img src="./img/new1_img.png" alt="스트로베리 요거트 생크림 케이크">
+                        </div><!-- //.new_img -->
+                    </div><!-- new_inner -->
+                </li>
+                <li class="swiper-slide">
+                    <div class="new_inner">
+                        <div class="new_right">
+                            <div class="new_txt">
+                                <strong>NEW</strong>
+                                <h2>
+                                    <em>생딸기</em> 담은 크림빵
+                                </h2>
+                                <div class="txt_bottom">
+                                    <p>
+                                        폭신하고 부드러운 빵에 달콤한 딸기 <br>
+                                    </p>
+                                    커스터드 크림과 새콤한 요거트 생크림을 <br>
+                                    듬뿍 넣은, 딸기 닮은 크림빵
+                                </div><!-- //.txt_bottom -->
+                            </div><!-- //.new_txt    -->
+                            <div class="new_go">
+                                <a href="#" class="detail">상세정보</a>
+                                <a href="#" class="order">주문하기</a>
+                            </div><!-- //.new_go -->
+                        </div><!-- //.new_right -->
+                        <div class="new_img">
+                            <img src="./img/new2_img.png" alt="생딸기 담은 크림빵">
+                        </div><!-- //.new_img -->
+                    </div><!-- new_inner -->
+                </li>
+                <li class="swiper-slide">
+                    <div class="new_inner">
+                        <div class="new_right">
+                            <div class="new_txt">
+                                <strong>NEW</strong>
+                                <h2>
+                                    <em>생딸기</em> <br>피스타치오 롤케이크
+                                </h2>
+                                <div class="txt_bottom">
+                                    은은한 피스타치오 시트에 <br>
+                                    상큼한 생딸기와 잼으로 맛을 더한 롤케이크
+                                </div><!-- //.txt_bottom -->
+                            </div><!-- //.new_txt    -->
+                            <div class="new_go">
+                                <a href="#" class="detail">상세정보</a>
+                                <a href="#" class="order">주문하기</a>
+                            </div><!-- //.new_go -->
+                        </div><!-- //.new_right -->
+                        <div class="new_img">
+                            <img src="./img/new3_img.png" alt="생딸기 담은 크림빵">
+                        </div><!-- //.new_img -->
+                    </div><!-- new_inner -->
+                </li>
+            </ul>
+            <div class="new_prev">
+                <img src="./img/new1_slide_buttons_left.png" alt="left" class="prev">
+            </div><!-- //.new_prev -->
+            <div class="new_next">
+                <img src="./img/new1_slide_buttons_right.png" alt="right" class="next">
+            </div><!-- //.new_next -->
+            <div class="swiper-pagination">
+            </div><!-- //.swiper-pagination -->
+        </section><!-- //.new -->
+        <section class="products">
+            <h2>products</h2>
+            <div class="tray">
+                <ul>
+                    <li><a href="#">
+                            <img src="./img/tray_bread.png" alt="빵">
+                            <h3>BREAD</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./img/tray_cake.png" alt="케이크">
+                            <h3>CAKE</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./img/tray_dessert.png" alt="디저트">
+                            <h3>DESSERT</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./img/tray_gift.png" alt="선물용">
+                            <h3>GIFT</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./img/tray_food.png" alt="푸드">
+                            <h3>FOOD</h3>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./img/tray_beverage.png" alt="음료">
+                            <h3>BEVERAGE</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- //.tray -->
+        </section><!-- //.products -->
+        <section class="best">
+            <div class="best_top">
+                <p>Today’s Best Sellers</p>
+                <div class="best_title">
+                    <img src="./img/best_leaf_l.png" alt="잎">
+                    <h2>오늘의 베스트 셀러</h2>
+                    <img src="./img/best_leaf_r.png" alt="잎">
+                </div><!-- //.best_title -->
+                <b>top5</b>
+            </div><!-- //.best_top -->
+            <div class="best_list">
+                <ul>
+                    <li class="breads"><a href="#">breads</a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_bread_1.png" alt="소금빵">
+                                    </div><!-- list_frame -->
+                                    <p>소금빵</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_bread_2.png" alt="낙엽 소세지 브레드">
+                                    </div><!-- list_frame -->
+                                    <p>낙엽 소세지 브레드</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_bread_3.png" alt="소보로">
+                                    </div><!-- list_frame -->
+                                    <p>소보로</p>
+                                </a>
+                            </li>
+                            <li class="best_hide">
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_bread_4.png" alt="데일리 우유식빵">
+                                    </div><!-- list_frame -->
+                                    <p>데일리 우유식빵</p>
+                                </a>
+                            </li>
+                            <li class="best_hide">
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_bread_5.png" alt="고단백 하루견과 곡물브레드">
+                                    </div><!-- list_frame -->
+                                    <p> 하루견과 곡물 브레드</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="desserts"><a href="#">desserts</a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_dessert_1.png" alt="베이비슈">
+                                    </div><!-- list_frame -->
+                                    <p>베이비슈</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_dessert_2.png" alt="리얼 브라우니">
+                                    </div><!-- list_frame -->
+                                    <p>리얼 브라우니</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_dessert_3.png" alt="초코칩 스콘">
+                                    </div><!-- list_frame -->
+                                    <p>초코칩 스콘</p>
+                                </a>
+                            </li>
+                            <li class="best_hide">
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_dessert_4.png" alt="허니 카스테라">
+                                    </div><!-- list_frame -->
+                                    <p>허니 카스테라</p>
+                                </a>
+                            </li>
+                            <li class="best_hide">
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_dessert_5.png" alt="티타임 레몬슈가 파운드">
+                                    </div><!-- list_frame -->
+                                    <p>티타임 레몬슈가 파운드</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cakes"><a href="#">cakes</a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_cake_1.png" alt="스트로베리 쇼콜라 갸또">
+                                    </div><!-- list_frame -->
+                                    <p>스트로베리 쇼콜라 갸또</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_cake_2.png" alt="뚜레쥬르 올스타 케이크">
+                                    </div><!-- list_frame -->
+                                    <p>뚜레쥬르 올스타 케이크</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_cake_3.png" alt="클레식 오브 치즈케이크">
+                                    </div><!-- list_frame -->
+                                    <p>클레식 오브 치즈케이크</p>
+                                </a>
+                            </li>
+                            <li class="best_hide">
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_cake_4.png" alt="말차에 퐁당 딸기 케이크">
+                                    </div><!-- list_frame -->
+                                    <p>말차에 퐁당 딸기 케이크</p>
+                                </a>
+                            </li>
+                            <li class="best_hide">
+                                <a href="#">
+                                    <div class="list_frame">
+                                        <img src="./img/bestseller_cake_5.png" alt="달콤 화이트 초코 케이크">
+                                    </div><!-- list_frame -->
+                                    <p>달콤 화이트 초코 케이크</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- //.best_list -->
+            <div class="best_more">
+                <button type="button">
+                    <img src="./img/more.png" alt="더보기">
+                </button>
+            </div><!-- best_more -->
+        </section><!-- //.best -->
+        <section class="promo">
+            <div class="promo_title">
+                <p>event</p>
+                <h2>진행중인 이벤트</h2>
+            </div><!-- //.promo_title -->
+            <ul>
+                <li data-aos="fade-down" data-aos-duration="800"><a href="#">
+                        <img src="./img/promo1.png" alt="2025년 신상품">
+                    </a></li>
+                <li data-aos="fade-down" data-aos-delay="300" data-aos-duration="800"><a href="#">
+                        <img src="./img/promo2.png" alt="기본을 기본좋게">
+                    </a></li>
+                <li data-aos="fade-down" data-aos-delay="600" data-aos-duration="800"><a href="#">
+                        <img src="./img/promo3.png" alt="케이크 5000원 할인">
+                    </a></li>
+            </ul>
+        </section><!-- //.promo -->
+        <section class="notice">
+            <h2>notice</h2>
+            <div class="notice_line">
+
+            </div><!-- //.notice_line -->
+            <div class="notice_contents">
+                <article class="recruit">
+                    <div class="notice_frame">
+                        <a href="#">
+                            <div class="notice_txt_top">
+                                <p>recruitment</p>
+                                <h3>채용 안내</h3>
+                            </div><!-- //notice_txt_top -->
+                            <div class="notice_txt_bottom">
+                                <p>
+                                    제과제빵의 꿈을 <br>
+                                    뚜레쥬르와 함께하세요
+                                </p>
+                            </div><!-- //.notice_txt_bottom -->
+                        </a>
+                    </div><!-- //.notice_frame -->
+                </article><!-- //recruit -->
+                <article class="startup">
+                    <div class="notice_frame">
+                        <a href="#">
+                            <div class="notice_txt_top">
+                                <p>start - up</p>
+                                <h3>창업 안내</h3>
+                            </div><!-- //notice_txt_top -->
+                            <div class="notice_txt_bottom">
+                                <p>
+                                    뚜레쥬르와 함께<br>
+                                    미래를 만들어가세요
+                                </p>
+                            </div><!-- //.notice_txt_bottom -->
+                        </a>
+                    </div><!-- //.notice_frame -->
+                </article><!-- //.startup -->
+                <article class="announce">
+                    <div class="notice_frame">
+                        <a href="#">
+                            <div class="notice_txt_top">
+                                <p>announcement</p>
+                                <h3>공지사항</h3>
+                            </div><!-- //notice_txt_top -->
+                            <div class="notice_txt_bottom">
+                                <ul>
+                                    <li>
+                                        <span>CJ ONE 멤버십 서비스 정책 변경 안내</span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </li>
+                                    <li>
+                                        <span>뚜레쥬르 모바일 제품 교환권 이용 안내</span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </li>
+                                    <li>
+                                        <span>CJ푸드빌 개인정보처리방침 개정 고지</span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </li>
+                                </ul>
+                            </div><!-- //.notice_txt_bottom -->
+                        </a>
+                    </div><!-- //.notice_frame -->
+                </article><!-- //.announce -->
+            </div><!-- //.notice_contents -->
+            <div class="notice_frame">
+            </div><!-- //.notice_frame -->
+        </section><!-- //.notice -->
+        <aside class="fam">
+            <div class="famAni">
+                <ul>
+                    <li><a href="#">CJ 푸드빌</a></li>
+                    <li><a href="#">VIPS</a></li>
+                    <li><a href="#">THE PLACE</a></li>
+                    <li><a href="#">n·GRILL</a></li>
+                    <li><a href="#">N SEOUL TOWER</a></li>
+                    <li><a href="#">제일제면소</a></li>
+                </ul>
+            </div><!-- //. -->
+        </aside><!-- //.fam -->
+        <footer>
+
+            <div class="footer_top">
+                <div class="f_logo">
+                    <img src="./img/footer_logo.png" alt="Tourlesjours">
+                </div>
+                <div class="sns">
+                    <a href="https://youtube.com/@touslesjourskr?si=KLwZmxgMJpWAHHPs" target="_blank"><i
+                            class="fa-brands fa-square-youtube"></i></a>
+                    <a href="https://www.instagram.com/touslesjours_kr/" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/TOUSlesJOURS" target="_blank"><i
+                            class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://x.com/cjtlj" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div><!-- //.sns -->
+                <div class="footer_right">
+                    <ul>
+                        <li><a href="#">채용안내</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div><!-- //.footer_right -->
+            </div><!-- //.footer_top -->
+            <div class="policy">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">위치기반서비스이용약관</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div><!-- //.policy -->
+            <div class="info">
+                주소 : (우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&G을지로타워 3, 9-11층 CJ푸드빌㈜ <br>
+                고객센터 : 1577-0700 <br>
+                통신판매업종신고증 제 2011-서울중구-0771호 <br>
+                호스팅제공자 : CJ올리브네트웍스(주) <br>
+                사업자등록번호 : 312-81-42519
+                대표이사 : 김찬호 개인정보보호책임자 : 김재완 <br>
+                대표 이메일 : help_master@cj.net
+            </div>
+            <div class="copy">
+                COPYRIGHT 2025©CJ Foodville ALL RIGHT RESERVED.
+            </div><!-- //.copy -->
+
+        </footer>
+    </main>
+</body>
+
+</html>

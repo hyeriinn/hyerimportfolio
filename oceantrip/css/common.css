@@ -1,0 +1,337 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('../font/font.css');
+/*  font-family: "Poppins", sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+/* 변수선언,body{} */
+:root {
+    --main-black: #3D363F;
+    --main-skyblue: #8AD1F4;
+    --main-grey: #DFDFDF;
+    --main-light-grey: #D3D3D3;
+    --main-middle-grey: #939393;
+    --main-yellow: #FFD324;
+    --sub-red: #EF6330;
+    --sub-yellow: #FFD52F;
+    --sub-green: #1BB97A;
+    --sub-blue: #1C7AF3;
+    --sub-purple: #AC3DEC;
+    --sub-grey: #A1A1A1;
+    --poppins-serif: "Poppins", sans-serif;
+    --tmoney: 'AnyConv.com__TmoneyRoundWind';
+    --dungenmo: 'DungGeunMo';
+    --Soyomaple: 'SOYO_Maple';
+    --Stunning: 'Stunning';
+    --TuesdayNight: 'TuesdayNight';
+    font-size: 20px;
+}
+
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--main-black);
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    /* background: #000; */
+    position: relative;
+}
+
+header .inner {
+    height: 100%;
+    display: flex;
+    /* background: #ccc; */
+    align-items: center;
+}
+
+.logo {
+    width: 240px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo a img {
+    width: 226px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+nav {
+    flex: 1;
+    height: 100%;
+    background: #fff;
+    font-family: var(--tmoney);
+    font-size: 0.9rem;
+}
+
+
+
+nav ul.gnb {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul.gnb>li {
+    flex: 1;
+    height: 100%;
+}
+
+nav ul.gnb>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 90px;
+    cursor: pointer;
+
+}
+
+.header_right {
+    width: 308px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_right .search_all {
+    width: 258px;
+    height: 40px;
+    position: relative;
+    display: flex;
+}
+
+.header_right .search_all #search {
+    width: 258px;
+    height: 100%;
+    border-radius: 50px;
+    outline-style: none;
+    border: none;
+    background: var(--main-grey);
+    padding-left: 16px;
+}
+
+.header_right .search_all>button {
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    outline-style: none;
+    border: none;
+    background: var(--main-skyblue);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header_right .search_all>button>img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.header_right button {
+    width: 40px;
+    height: 40px;
+    /* background: var(--main-black); */
+    border-radius: 50%;
+    outline-style: none;
+    border: none;
+    padding: 0;
+}
+
+.header_right>button>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .fix {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    position: fixed;
+    left: 0; top: -100%;
+
+}
+header.on .fix {
+    top: 0;
+}
+
+header .fix .fix_inner {
+    width: 100%; 
+    height: 70vh;
+    background: rgba(255, 255, 255, 1);
+    padding: 0 320px;
+    /* display: flex; */
+}
+header .fix .fix_inner .fix_icon{
+   width: 100%;
+   height: 89px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+header .fix .fix_inner ul.gnb{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .fix .fix_inner ul.gnb li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* background: #ccc; */
+}
+header .fix .fix_inner ul.gnb>li>a{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+}
+header .fix .fix_inner ul.gnb>li:hover>a{
+    border-bottom: 2px solid var(--main-skyblue);
+}
+
+
+header .fix .fix_inner ul.gnb li ul.snb{
+    width: 100%;
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+}
+header .fix .fix_inner ul.gnb li ul.snb li{
+    width: 100%;
+    /* background: blue; */
+}
+header .fix .fix_inner ul.gnb li ul.snb li a{
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+
+
+header .fix .fix_inner ul.gnb li .fix_img{
+    width: 180px; height: 180px;
+    background: purple;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 800px;
+    background: url(../img/footer_bg.png) center bottom/ cover;
+    padding-top: 160px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+}
+footer p{
+    text-align: center;
+    opacity: .5;
+}
+
+footer .subscribe{
+    width: 670px;
+    height: 100px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .subscribe .subscribe_inner{
+ width: 638px;
+ height: 68px;
+ background: #fff;
+ border-radius: 50px;
+ padding: 0 15px 0 30px;
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+}
+footer .subscribe .subscribe_inner #email{
+    width: 448px;
+    height: 100%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+footer .subscribe .subscribe_inner>button{
+    width: 150px;
+    height: 50px;
+    background: var(--main-black);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+footer .sns{
+    width: 1280px;
+    height: 105px;
+    position: relative;
+}
+footer .sns ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer .sns ul li a{
+    display: inline-block;
+    font-family: var(--Stunning);
+    padding: 17px 38px;
+    background: var(--main-black);
+    color: #fff;
+    border-radius: 100px;
+    position: relative;
+}
+footer .sns ul li:nth-child(3) a{
+    position: absolute;
+    transform: rotate(20deg) scaleY(-1);
+    transform-origin: right bottom;
+    bottom: 40px; right: 715px;
+}
+
+
+
