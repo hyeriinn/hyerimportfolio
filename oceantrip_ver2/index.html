@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="travel, sea, ocean">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Hyerim Jeong">
+    <title>오션트립</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/512300eeec.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"
+        integrity="sha512-i8BU+cmsrlyKOPFSCdO4x4wHXvjg6YIXy6K/PsPL0/3F89ccSgk06wDBP5FTyiGDzVNADQhal1dA1DHH2JB0Rw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <!-- <script src="js/main.js"></script> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#"><img src="./img/logo.png" alt="ocean trip"></a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">바다는 지금</a></li>
+                    <li><a href="#">여행 정보</a></li>
+                    <li><a href="#">주변 정보</a></li>
+                    <li><a href="#">바다 백과</a></li>
+                </ul>
+            </nav>
+            <div class="header_right">
+                <form class="search_all">
+                    <input type="search" id="search" placeholder="여행지를 입력하세요.">
+                    <button type="submit">
+                        <img src="img/header_icon_search.png" alt="검색아이콘">
+                    </button>
+                </form><!-- //.search_all -->
+                <button type="button" class="hamburger">
+                    <img src="img/gnb_snb.png" alt="서브메뉴">
+                    <!-- <div class="fix_icon">
+                        <i class="fa-solid fa-x"></i>
+                    </div> --><!-- //.fix_icon -->
+                </button>
+            </div><!-- //.header_right -->
+        </div><!-- //.inner -->
+        <div class="fix">
+            <div class="fix_inner">
+
+                <ul class="gnb">
+                    <li>
+                        <div class="fix_img"></div>
+                        <a href="#">바다는 지금</a>
+                        <ul class="snb">
+                            <li><a href="#">해상 예보</a></li>
+                            <li><a href="#">해수욕장 이용현황</a></li>
+                            <li><a href="#"> 해수욕장 개장기간</a></li>
+                        </ul><!-- //.snb -->
+                    </li>
+                    <li>
+                        <div class="fix_img"></div>
+                        <a href="#">여행 정보</a>
+                        <ul class="snb">
+                            <li><a href="#">대여 시설</a></li>
+                            <li><a href="#">편의 시설</a></li>
+                        </ul><!-- //.snb -->
+                    </li>
+                    <li>
+                        <div class="fix_img"></div>
+                        <a href="#">주변 정보</a>
+                        <ul class="snb">
+                            <li><a href="#">액티비티</a></li>
+                            <li><a href="#">주변 맛집</a></li>
+                            <li><a href="#">주변 숙소</a></li>
+                            <li><a href="#">사진 명소</a></li>
+                        </ul><!-- //.snb -->
+                    </li>
+                    <li>
+                        <div class="fix_img"></div>
+                        <a href="#">바다백과</a>
+                        <ul class="snb">
+                            <li><a href="#">멸종위기동물</a></li>
+                            <li><a href="#">해양 생물 정보</a></li>
+                        </ul><!-- //.snb -->
+                    </li>
+                </ul><!-- //.gnb -->
+            </div><!-- //.fix_inner -->
+        </div><!-- fix -->
+    </header>
+    <div class="notice">
+        <div class="noticeAni">
+            <ul>
+                <li><a href="#">
+                        <img src="../oceantrip/img/weather_windy.png" alt="풍랑주위보">
+                        <p>풍랑주의보</p>
+                        <span>동해남부남쪽안쪽먼바다</span>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../oceantrip/img/weather_wind.png" alt="강풍주위보">
+                        <p>강풍주의보</p>
+                        <span>서해5도,여수,해남,무안,함평,영광,목포,신안(흑산면제외)진도,흑산도•홍도,울릉도•독도</span>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../oceantrip/img/weather_windy.png" alt="풍랑주위보">
+                        <p>풍랑주의보</p>
+                        <span>동해남부남쪽안쪽먼바다</span>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../oceantrip/img/weather_wind.png" alt="강풍주위보">
+                        <p>강풍주의보</p>
+                        <span>서해5도,여수,해남,무안,함평,영광,목포,신안(흑산면제외)진도,흑산도•홍도,울릉도•독도</span>
+                    </a></li>
+            </ul><!-- //.noticeAni -->
+        </div><!-- //.noticeAni -->
+    </div><!-- //.notice -->
+    <main>
+        <section class="map">
+            <div class="main_vector">
+                <img src="./img/main_vector.svg" alt="메인데코벡터">
+            </div><!-- ///.main_vector -->
+            <div class="inner">
+                <div class="map_top">
+                    <div class="map_top_location">
+                        <a href="#">
+                            <img src="img/main_loca.png" alt="위치">
+                            <p>제주, 협재 해수욕장</p>
+                            <span>10°C</span>
+                        </a>
+                    </div>
+                    <div class="map_top_icon">
+                        <a href="#">
+                            <img src="img/main_search.png" alt="검색">
+                        </a>
+                    </div><!-- //.map_top_icon -->
+                    <div class="map_top_setting">
+                        <p>°C</p>
+                        <img src="img/main_setting.png" alt="설정">
+                    </div><!-- //.map_top_setting -->
+                </div><!-- //.map_top -->
+                <div class="map_both">
+                    <div class="main_visual">
+                        <img src="./img/main_visual.jpg" alt="">
+                    </div><!-- //.main_visual -->
+                    <article class="map_right">
+                        <div class="map_right_top" data-aos="fade-up-left" data-aos-delay="300" data-aos-duration="600">
+                            <h2>
+                                협재해수욕장
+                                <a href="#"><img src="../oceantrip/img/main_arrow.png" alt="넘어가기아이콘"></a>
+                            </h2>
+                            <p>제주특별자치도 제주시 한림읍
+                                한림로 329-10
+                                <img src="img/main_loca.png" alt="주소아이콘">
+                            </p>
+                            <div class="main_today">
+                                <img src="./img/main_weather.png" alt="구름해">
+                                <div class="main_today_txt">
+                                    <h3>10</h3>
+                                    <span>°C</span>
+                                    <p>오늘</p>
+                                    <em>11°C / 7°C</em>
+                                </div><!-- //.main_today_txt -->
+                                <ul class="main_today_sun">
+                                    <li class="sun_up">
+                                        <p>일출 07:43</p>
+                                        <img src="img/sun_up.png" alt="일출">
+                                    </li><!-- //.sun_up -->
+                                    <li class="sun_down">
+                                        <p>일몰 19:38</p>
+                                        <img src="img/sun_down.png" alt="일몰">
+                                    </li><!-- //.sun_down -->
+                                </ul><!-- main_today_sun -->
+                            </div><!-- //.main_today -->
+                            <div class="main_right_go">
+                                <img src="img/main_loca_fill.png" alt="길찾기">
+                                <p>길찾기</p>
+                                <ul class="go_icons">
+                                    <li><a href="#"><img src="img/main_kakao.png" alt=""></a></li>
+                                    <li><a href="#"><img src="img/main_naver.png" alt=""></a></li>
+                                </ul><!-- //.go_icons -->
+                            </div><!-- //.main_right_go -->
+                        </div><!-- //.map_right_top -->
+                        <div class="map_right_bottom" data-aos="fade-up-left" data-aos-delay="300" data-aos-offset="0"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="300">
+                            <ul>
+                                <li>
+                                    <div class="main_circle"></div>
+                                    <p>맛집</p>
+                                </li>
+                                <li>
+                                    <div class="main_circle"></div>
+                                    <p>이색카페</p>
+                                </li>
+                                <li>
+                                    <div class="main_circle"></div>
+                                    <p>자연경관</p>
+                                </li>
+                                <li>
+                                    <div class="main_circle"></div>
+                                    <p>축제일정</p>
+                                </li>
+                                <li>
+                                    <div class="main_circle"></div>
+                                    <p>생태계</p>
+                                </li>
+                                <li>
+                                    <div class="main_circle"></div>
+                                    <p>의료시설</p>
+                                </li>
+                            </ul>
+                        </div><!-- //.map_right_bottom -->
+                    </article><!-- //.map_right -->
+                </div><!-- //.map_both -->
+            </div><!-- //.inner -->
+        </section><!-- //.map -->
+        <section class="greeting">
+            <div class="inner">
+                <h2 class="greet">
+                    <div class="greeting_top" data-aos="fade-down-right" data-aos-duration="600">
+                        <p> &lt;HELLO, EVERYONE/&gt; </p>
+                        <img src="../oceantrip/img/greeting_emoji.png" alt="hello">
+                    </div><!-- //.greeting_top -->
+                    <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="600">꿈꾸던 여행을 현실로<br>
+                        원하던 여행의 시작,
+                        <span class="text_container">오션트립
+                            <span class="overlay_text">ocean</span>
+                        </span>
+                        <em>입니다.</em>
+                    </p>
+                </h2><!-- //.greet -->
+                <div class="greeting_photo" data-aos="fade-left">
+                    <ul class="greeting_photo_top">
+                        <li>
+                            <img src="img/greeting_img4.png" alt="여행4">
+                        </li>
+                        <li>
+                            <img src="img/greeting_img5.png" alt="여행4">
+                        </li>
+                        <li>
+                            <img src="img/greeting_img6.png" alt="여행4">
+                        </li>
+                    </ul>
+                    <ul class="greeting_photo_bottom">
+                        <li class="txt">
+                            <img src="img/greeting_img1.jpg" alt="여행4">
+                            <h3 data-aos="zoom-out-down">
+                                ocean trip.
+                            </h3>
+                        </li>
+                        <li>
+                            <img src="img/greeting_img2.jpg" alt="여행5">
+                        </li>
+                        <li>
+                            <img src="img/greeting_img3.png" alt="여행6">
+                        </li>
+                    </ul>
+                </div><!-- //.greeting_photo -->
+            </div><!-- //.inner -->
+        </section><!-- //.greeting -->
+        <section class="info">
+            <div class="inner">
+                <ul>
+                    <li class="info_icon1" data-aos="fade-down" data-aos-delay="100">
+                        <a href="#">
+                            <div class="info_icon_bg">
+                                <div class="info_icon_inner">
+                                    <img src="img/info_icon1.png" alt="편의시설">
+                                </div><!-- info_icon_inner -->
+                            </div><!-- //.info_icon_bg -->
+                            <p>편의시설</p>
+                        </a>
+                    </li><!-- //.info_icon1 -->
+                    <li class="info_icon2" data-aos="fade-down" data-aos-delay="200">
+                        <a href="#">
+                            <div class="info_icon_bg">
+                                <div class="info_icon_inner">
+                                    <img src="img/info_icon2.png" alt="대여">
+                                </div><!-- info_icon_inner -->
+                            </div><!-- //.info_icon_bg -->
+                            <p>대여시설</p>
+                        </a>
+                    </li><!-- //.info_icon2 -->
+                    <li class="info_icon3" data-aos="fade-down" data-aos-delay="300">
+                        <a href="#">
+                            <div class="info_icon_bg">
+                                <div class="info_icon_inner">
+                                    <img src="img/info_icon3.png" alt="액티비티">
+                                </div><!-- info_icon_inner -->
+                            </div><!-- //.info_icon_bg -->
+                            <p>액티비티</p>
+                        </a>
+                    </li><!-- //.info_icon3 -->
+                    <li class="info_icon4" data-aos="fade-down" data-aos-delay="400">
+                        <a href="#">
+                            <div class="info_icon_bg">
+                                <div class="info_icon_inner">
+                                    <img src="img/info_icon4.png" alt="축제">
+                                </div><!-- info_icon_inner -->
+                            </div><!-- //.info_icon_bg -->
+                            <p>지역 축제 정보</p>
+                        </a>
+                    </li><!-- //.info_icon4 -->
+                    <li class="info_icon5" data-aos="fade-down" data-aos-delay="500">
+                        <a href="#">
+                            <div class="info_icon_bg">
+                                <div class="info_icon_inner">
+                                    <img src="img/info_icon5.png" alt="소식">
+                                </div><!-- info_icon_inner -->
+                            </div><!-- //.info_icon_bg -->
+                            <p>바다 소식</p>
+                        </a>
+                    </li><!-- //.info_icon5 -->
+
+        </section><!-- //.info -->
+        <section class="route">
+            <div class="inner">
+                <div class="tit">
+                    <p>주변 해변은 얼마나 걸릴까?</p>
+                    <div class="title_bottom">
+                        <h2>
+                            근처 해변 찾아보기
+                            <img src="img/route_subtitle_title_icon.png" alt="돋보기">
+                        </h2>
+                        <a class="next">
+                            <p>다른 지역으로 설정 </p>
+                            <img src="img/next_icon_white.png" alt="다음">
+                        </a><!-- //.next -->
+                    </div><!-- //.title_bottom -->
+                </div><!-- //.tit -->
+                <article class="route_contents" data-aos="fade-right" data-aos-duration="600">
+                    <ul>
+                        <li class="route_place">
+                            <img src="img/route_location_img1.jpg" alt="곽지해변">
+                            <div class="route_place_txt" data-aos="fade-right" data-aos-duration="600"
+                                data-aos-delay="300">
+                                <h3>
+                                    곽지 해수욕장
+                                    <a href="#">
+                                        <img src="img/main_arrow.png" alt="화살표">
+                                    </a>
+                                </h3>
+                                <span>
+                                    공항과 가까워 접근성이 좋은 해변
+                                </span>
+                            </div><!-- //.route_place_txt" -->
+                        </li><!-- //.route_place -->
+                        <li class="route_time">
+                            <img src="img/route_time_1.png" alt="소요시간">
+                        </li><!-- //.route_time -->
+                        <li class="route_place">
+                            <img src="img/route_location_img2.png" alt="협재해변">
+                            <div class="route_place_txt" data-aos="fade-right" data-aos-duration="600"
+                                data-aos-delay="300">
+                                <h3>
+                                    협재 해수욕장
+                                    <a href="#">
+                                        <img src="img/main_arrow.png" alt="화살표">
+                                    </a>
+                                </h3>
+                                <span>
+                                    비양도를 바라볼 수 있는 에메랄드 빛 해변
+                                </span>
+                            </div><!-- //.route_place_txt" -->
+                        </li><!-- //.route_place -->
+                        <li class="route_time">
+                            <img src="img/route_time_1.png" alt="소요시간">
+                        </li><!-- //.route_time -->
+                        <li class="route_place">
+                            <img src="img/route_location_img3.jpg" alt="금능해변">
+                            <div class="route_place_txt" data-aos="fade-right" data-aos-duration="600"
+                                data-aos-delay="300">
+                                <h3>
+                                    금능 해수욕장
+                                    <a href="#">
+                                        <img src="img/main_arrow.png" alt="화살표">
+                                    </a>
+                                </h3>
+                                <span>
+                                    반려동물과 함께 즐길 수 있는 해변
+                                </span>
+                            </div><!-- //.route_place_txt" -->
+                        </li><!-- //.route_place -->
+                    </ul>
+                </article><!-- //.route_contents -->
+            </div><!-- inner -->
+        </section><!-- //.route -->
+        <section class="congest">
+            <div class="inner">
+                <div class="tit">
+                    <p>어디로 가는게 좋을까?</p>
+                    <div class="title_bottom">
+                        <h2>
+                            [ 강원도 ] 국내 해변 혼잡도
+                            <img src="img/route_subtitle_title_icon2.png" alt="돋보기">
+                        </h2>
+                        <a href="#" class="next">
+                            <p>다른 지역으로 설정 </p>
+                            <img src="img/next_icon_dark.png" alt="다음">
+                        </a>
+                    </div><!-- //.title_bottom -->
+                </div><!-- //.tit -->
+                <article class="congest_contents">
+                    <div class="congest_circle circle1">
+                        <button type="button" class="congest_center">
+                            <p>여유</p>
+                        </button>
+                        <ul class="congest_green">
+                            <li class="comment1">
+                                <div class="comment_txt">
+                                    <span>강릉</span>
+                                    <strong>사천</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment2 ">
+                                <div class="comment_txt">
+                                    <span>양양</span>
+                                    <strong>오산</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment3">
+                                <div class="comment_txt">
+                                    <span>삼척</span>
+                                    <strong>문암</strong>
+                                </div><!-- //.comment_txt -->
+
+                            </li>
+                            <li class="comment4">
+                                <div class="comment_txt">
+                                    <span>고성</span>
+                                    <strong>천진</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                        </ul><!-- //.congest_green -->
+                    </div><!-- //.congest_circle1 -->
+                    <div class="congest_circle circle2">
+                        <button>
+                            <p>혼잡</p>
+                        </button>
+                        <ul class="congest_red">
+                            <li class="comment5">
+                                <div class="comment_txt">
+                                    <span>강릉</span>
+                                    <strong>경포</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment6">
+                                <div class="comment_txt">
+                                    <span>속초</span>
+                                    <strong>속초</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment7">
+                                <div class="comment_txt">
+                                    <span>양양</span>
+                                    <strong>낙산</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment8">
+                                <div class="comment_txt">
+                                    <span>동해</span>
+                                    <strong>망상</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                        </ul><!-- //.congest_red -->
+                    </div><!-- //.congest_circle2 -->
+                    <div class="congest_circle circle3">
+                        <button>
+                            <p>보통</p>
+                        </button>
+                        <ul class="congest_yellow">
+                            <li class="comment9">
+                                <div class="comment_txt">
+                                    <span>강릉</span>
+                                    <strong>강문</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment10">
+                                <div class="comment_txt">
+                                    <span>강릉</span>
+                                    <strong>송정</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment11">
+                                <div class="comment_txt">
+                                    <span>강릉</span>
+                                    <strong>안목</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                            <li class="comment12">
+                                <div class="comment_txt">
+                                    <span>고성</span>
+                                    <strong>회진포</strong>
+                                </div><!-- //.comment_txt -->
+                            </li>
+                        </ul><!-- //.congest_yellow -->
+                    </div><!-- //.congest_circle3 -->
+                </article><!-- //.congest_contents -->
+            </div><!-- //.inner -->
+        </section><!-- //.congest -->
+        <section class="place">
+            <div class="inner">
+                <div class="tit">
+                    <p>어디로 가는게 좋을까?</p>
+                    <div class="title_bottom">
+                        <h2>
+                            [ 강문 ] 해변 맛집 <img src="img/route_subtitle_title_icon3.png" alt="식사">
+                        </h2>
+                        <a href="#" class="next">
+                            <p>다른 지역으로 설정</p>
+                            <img src="img/next_icon_white.png" alt="다음">
+                        </a> <!-- //.next -->
+                    </div><!-- //.title_bottom -->
+                </div><!-- //.tit -->
+                <div class="place_contents">
+                    <article class="place_card1">
+                        <div class="place_card_top">
+                            <div class="card_title">
+                                <span>강릉 강문해변</span>
+                                <h3>동화가든</h3>
+                            </div><!-- //.card_title -->
+                            <div class="card_star">
+                                <img src="../oceantrip/img/place_star.png" alt="별">
+                                <p>3.6</p>
+                                <em>(6,743)</em>
+                            </div><!--//.card_star -->
+                        </div><!-- //.place_card_top -->
+                        <div class="place_card_bottom">
+                            <div class="place_loca">
+                                <img src="img/main_loca_fill.png" alt="위치">
+                                <p>강릉시 초당순두부길77번길 15</p>
+                            </div><!-- //.place_loca -->
+                            <ul>
+                                <li>
+                                    <p>#강릉하면_초당순두부</p>
+                                    <img src="img/place1_hashtag_icon1.png" alt="국">
+                                </li>
+                                <li>
+                                    <p>#친절한_직원</p>
+                                    <img src="img/place1_hashtag_icon2.png" alt="직원">
+                                </li>
+                                <li>
+                                    <p>#웨이팅_필수</p>
+                                    <img src="img/place1_hashtag_icon3.png" alt="시계">
+                                </li>
+                            </ul>
+                        </div><!-- //.place_card_bottom -->
+                        <div class="place_img">
+                            <img src="img/card_img1.jpg" alt="순두부찌개">
+                        </div><!-- //.place_img -->
+                    </article><!-- place_card1 -->
+                    <article class="place_card2">
+                        <div class="place_card_top">
+                            <div class="card_title">
+                                <span>강릉 강문해변</span>
+                                <h3>카페 툇마루</h3>
+                            </div><!-- //.card_title -->
+                            <div class="card_star">
+                                <img src="../oceantrip/img/place_star.png" alt="별">
+                                <p>3.9</p>
+                                <em>(1,987)</em>
+                            </div><!--//.card_star -->
+                        </div><!-- //.place_card_top -->
+                        <div class="place_card_bottom">
+                            <div class="place_loca">
+                                <img src="img/main_loca_fill.png" alt="위치">
+                                <p>강원특별자치도 강릉시 난설헌로 232</p>
+                            </div><!-- //.place_loca -->
+                            <ul>
+                                <li>
+                                    <p>#강릉_핫플</p>
+                                    <img src="img/place2_hashtag_icon1.png" alt="국">
+                                </li>
+                                <li>
+                                    <p>#흑임자_라떼</p>
+                                    <img src="img/place2_hashtag_icon3.png" alt="시계">
+                                </li>
+                                <li>
+                                    <p>#애견동반가능</p>
+                                    <img src="img/place2_hashtag_icon2.png" alt="직원">
+                                </li>
+                            </ul>
+                        </div><!-- //.place_card_bottom -->
+                        <div class="place_img">
+                            <img src="img/place_card_img2.jpg" alt="흑임자라떼">
+                        </div><!-- //.place_img -->
+                    </article><!-- //.place_card2 -->
+                    <article class="place_card3">
+                        <div class="place_card_top">
+                            <div class="card_title">
+                                <span>강릉 강문해변</span>
+                                <h3>뚱보냉면</h3>
+                            </div><!-- //.card_title -->
+                            <div class="card_star">
+                                <img src="../oceantrip/img/place_star.png" alt="별">
+                                <p>3.9</p>
+                                <em>(197)</em>
+                            </div><!--//.card_star -->
+                        </div><!-- //.place_card_top -->
+                        <div class="place_card_bottom">
+                            <div class="place_loca">
+                                <img src="img/main_loca_fill.png" alt="위치">
+                                <p>강릉시 포남동 강릉대로419번길 17 </p>
+                            </div><!-- //.place_loca -->
+                            <ul>
+                                <li>
+                                    <p>#시원~한_국물</p>
+                                    <img src="img/place3_hashtag_icon1.png" alt="국">
+                                </li>
+                                <li>
+                                    <p>#가성비_굿</p>
+                                    <img src="img/place3_hashtag_icon3.png" alt="직원">
+                                </li>
+                                <li>
+                                    <p>#로컬_맛집</p>
+                                    <img src="img/place3_hashtag_icon2.png" alt="시계">
+                                </li>
+                            </ul>
+                        </div><!-- //.place_card_bottom -->
+                        <div class="place_img">
+                            <img src="img/place_card_img3.jpg" alt="냉면">
+                        </div><!-- //.place_img -->
+                    </article><!-- //.place_card3 -->
+
+                </div><!-- //.place_contents -->
+            </div><!-- //.inner -->
+        </section><!-- //.place -->
+        <section class="photo">
+            <div class="inner">
+                <div class="tit">
+                    <p>어디서 만날 수 있을까?</p>
+                    <div class="title_bottom">
+                        <h2>
+                            바다에서 만날 수 있는 국내 멸종위기동물들
+                            <img src="img/route_subtitle_title_icon4.png" alt="사진기">
+                        </h2>
+                        <a href="#" class="next">
+                            <p>더 많은 동·식물들 알아보기 </p>
+                            <img src="img/next_icon_white.png" alt="다음">
+                        </a>
+                        <!-- //.next -->
+                    </div><!-- //.title_bottom -->
+                </div><!-- //.tit -->
+            </div><!-- //.inner -->
+            <div class="swiper photo_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide photo1">
+                        <a href="#"><img src="img/photo1.jpg" alt="바다거북"></a>
+                    </div>
+                    <div class="swiper-slide photo2">
+                        <a href="#"><img src="img/photo2.jpg" alt="청다리도요사촌"></a>
+                    </div>
+                    <div class="swiper-slide photo3">
+                        <a href="#"><img src="img/photo3.jpg" alt="돌고래"></a>
+                    </div>
+                    <div class="swiper-slide photo1">
+                        <a href="#"><img src="img/photo1.jpg" alt="바다거북"></a>
+                    </div>
+                    <div class="swiper-slide photo2">
+                        <a href="#"><img src="img/photo2.jpg" alt="청다리도요사촌"></a>
+                    </div>
+                    <div class="swiper-slide photo3">
+                        <a href="#"><img src="img/photo3.jpg" alt="돌고래"></a>
+                    </div>
+                </div>
+                <div class="prev_next">
+                    <img src="img/photo_window_left.png" alt="" class="prev">
+                    <img src="img/photo_window_right.png" alt="" class="next">
+                </div>
+            </div>
+        </section><!-- //.photo -->
+        <footer>
+            <p>바다 관련 최신 정보 소식지를 받아보고싶다면?</p>
+            <div class="subscribe">
+                <form class="subscribe_inner">
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    <button type="submit">subscribe</button>
+                </form><!-- //.footer_txt_inner -->
+            </div><!-- //.footer_txt -->
+            <div class="sns">
+                <ul>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">thread</a></li>
+                    <li><a href="#">youtube</a></li>
+                    <li><a href="#">tiktok</a></li>
+                    <li><a href="#">term & conditions</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
