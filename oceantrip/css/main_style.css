@@ -556,7 +556,6 @@
 
 
 .greeting .inner {
-    height: 1230px;
     padding: 200px 0;
 }
 
@@ -614,83 +613,31 @@
     z-index: -10;
 }
 
-.greeting_photo {
+.greeting_video {
     width: 100%;
-    height: 430px;
+    height: 414px;
     display: flex;
     flex-direction: column;
     gap: 16px
 }
-
-.greeting_photo ul.greeting_photo_top {
-    width: 100%;
-    height: 207px;
-    /* background: #ccc; */
-    display: flex;
-    justify-content: flex-end;
-    gap: 16px;
+.video_clip {
+  width: 207px;
+  height: 207px;
+  -webkit-mask: url(#starClip);
+  mask: url(#starClip);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.greeting_photo ul.greeting_photo_bottom {
-    width: 100%;
-    height: 207px;
-    /* background: #ccc; */
-    display: flex;
-    justify-content: flex-start;
-    gap: 16px;
+.video_clip video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-.greeting_photo .greeting_photo_top li {
-    width: 207px;
-    height: 207px;
-}
-
-.greeting_photo .greeting_photo_top li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.greeting_photo .greeting_photo_top li:nth-child(2n+1) img {
-    border-radius: 50%;
-}
-
-
-.greeting_photo .greeting_photo_bottom li:nth-child(2) {
-    width: 207px;
-    height: 207px;
-}
-
-.greeting_photo .greeting_photo_bottom li:nth-child(3) {
-    width: 207px;
-    height: 207px;
-}
-
-.greeting_photo .greeting_photo_bottom li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 100px;
-}
-
-.greeting_photo ul.greeting_photo_bottom .txt {
-    width: 415px;
-    height: 100%;
-    position: relative;
-}
-
-.greeting_photo ul.greeting_photo_bottom .txt h3 {
-    width: 300px;
-    font-family: var(--Stunning);
-    font-weight: 700;
-    font-size: 55px;
-    color: var(--main-white);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
+  
 
 
 /* info */
