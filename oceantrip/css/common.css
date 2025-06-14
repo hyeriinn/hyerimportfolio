@@ -4,6 +4,7 @@
 /*  font-family: "Poppins", sans-serif; */
 
 * {
+    
     box-sizing: border-box;
 }
 
@@ -11,18 +12,21 @@
 :root {
     --main-black: #3D363F;
     --main-skyblue: #8AD1F4;
+    --main-white: #FFFFFF;
     --main-grey: #DFDFDF;
-    --main-light-grey: #D3D3D3;
-    --main-middle-grey: #939393;
-    --main-yellow: #FFD324;
+    --main-light-grey: #FAFAFA;
+    --main-grey50: #9E9B9F;
+    --main-grey70: #787379;
     --sub-red: #EF6330;
     --sub-yellow: #FFD52F;
     --sub-green: #1BB97A;
     --sub-blue: #1C7AF3;
     --sub-purple: #AC3DEC;
     --sub-grey: #A1A1A1;
-    --poppins-serif: "Poppins", sans-serif;
-    --tmoney: 'AnyConv.com__TmoneyRoundWind';
+    --stroke-lightgrey: #e3e3e3;
+    --hover-bg :#F6FBFF;
+    --pretendard :  'pretendard', sans-serif;
+    --nanumRound: 'NanumSquareRound';
     --dungenmo: 'DungGeunMo';
     --Soyomaple: 'SOYO_Maple';
     --Stunning: 'Stunning';
@@ -37,7 +41,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--pretendard);
     color: var(--main-black);
 }
 
@@ -46,14 +50,10 @@ header {
     height: 90px;
     /* background: #000; */
     position: relative;
+    display: flex;
 }
 
-header .inner {
-    height: 100%;
-    display: flex;
-    /* background: #ccc; */
-    align-items: center;
-}
+
 
 .logo {
     width: 240px;

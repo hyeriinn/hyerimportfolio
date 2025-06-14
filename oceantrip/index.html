@@ -22,42 +22,41 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main_style.css">
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <div class="inner">
-            <h1 class="logo">
-                <a href="#"><img src="./img/logo.png" alt="ocean trip"></a>
-            </h1>
-            <nav>
-                <ul class="gnb">
-                    <li><a href="#">바다는 지금</a></li>
-                    <li><a href="#">여행 정보</a></li>
-                    <li><a href="#">주변 정보</a></li>
-                    <li><a href="#">바다 백과</a></li>
-                </ul>
-            </nav>
-            <div class="header_right">
-                <form class="search_all">
-                    <input type="search" id="search" placeholder="여행지를 입력하세요.">
-                    <button type="submit">
-                        <img src="img/header_icon_search.png" alt="검색아이콘">
-                    </button>
-                </form><!-- //.search_all -->
-                <button type="button" class="hamburger">
-                    <img src="img/gnb_snb.png" alt="서브메뉴">
-                    <!-- <div class="fix_icon">
+    <header class="inner">
+
+        <h1 class="logo">
+            <a href="#"><img src="./img/logo.png" alt="ocean trip"></a>
+        </h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">바다는 지금</a></li>
+                <li><a href="#">여행 정보</a></li>
+                <li><a href="#">주변 정보</a></li>
+                <li><a href="#">바다 백과</a></li>
+            </ul>
+        </nav>
+        <div class="header_right">
+            <form class="search_all">
+                <input type="search" id="search" placeholder="여행지를 입력하세요.">
+                <button type="submit">
+                    <img src="img/header_icon_search.png" alt="검색아이콘">
+                </button>
+            </form><!-- //.search_all -->
+            <button type="button" class="hamburger">
+                <img src="img/gnb_snb.png" alt="서브메뉴">
+                <!-- <div class="fix_icon">
                         <i class="fa-solid fa-x"></i>
                     </div> --><!-- //.fix_icon -->
-                </button>
-            </div><!-- //.header_right -->
+            </button>
+        </div><!-- //.header_right -->
         </div><!-- //.inner -->
         <div class="fix">
             <div class="fix_inner">
-
                 <ul class="gnb">
                     <li>
                         <div class="fix_img"></div>
@@ -97,7 +96,7 @@
                 </ul><!-- //.gnb -->
             </div><!-- //.fix_inner -->
         </div><!-- fix -->
-    </header>
+    </header><!-- //.inner -->
     <div class="notice">
         <div class="noticeAni">
             <ul>
@@ -125,103 +124,116 @@
         </div><!-- //.noticeAni -->
     </div><!-- //.notice -->
     <main>
-        <section class="map">
+        <section class="hero">
             <div class="main_vector">
                 <img src="./img/main_vector.svg" alt="메인데코벡터">
             </div><!-- ///.main_vector -->
             <div class="inner">
-                <div class="map_top">
-                    <div class="map_top_location">
-                        <a href="#">
-                            <img src="img/main_loca.png" alt="위치">
-                            <p>제주, 협재 해수욕장</p>
-                            <span>10°C</span>
-                        </a>
-                    </div>
-                    <div class="map_top_icon">
-                        <a href="#">
-                            <img src="img/main_search.png" alt="검색">
-                        </a>
-                    </div><!-- //.map_top_icon -->
-                    <div class="map_top_setting">
-                        <p>°C</p>
-                        <img src="img/main_setting.png" alt="설정">
-                    </div><!-- //.map_top_setting -->
-                </div><!-- //.map_top -->
-                <div class="map_both">
+                <div class="dropdown-group">
+                    <div class="dropdown" data-type="region">
+                        <button class="dropdown-toggle">여행 지역</button>
+                        <ul class="dropdown-menu">
+                            <li data-value="busan">부산</li>
+                            <li data-value="ulsan">울산</li>
+                            <li data-value="jeju">제주</li>
+                            <li data-value="gyeonggi">경기</li>
+                            <li data-value="incheon">인천</li>
+                            <li data-value="chungnam">충남</li>
+                            <li data-value="jeonbuk">전북</li>
+                            <li data-value="jeonnam">전남</li>
+                            <li data-value="gangwon">강원</li>
+                            <li data-value="geongbuk">경북</li>
+                            <li data-value="geongnam">경남</li>
+                        </ul>
+                        <div class="dropdown" data-type="city">
+                            <button class="dropdown-toggle">도시</button>
+                            <ul class="dropdown-menu"></ul>
+                        </div>
+                        <div class="dropdown" data-type="beach">
+                            <button class="dropdown-toggle">해수욕장</button>
+                            <ul class="dropdown-menu"></ul>
+                        </div>
+                        <button type="submit">
+                            <img src="img/tabler_send.svg" alt="전송">
+                        </button>
+                    </div><!-- //.main_top -->
+                </div><!-- //.dropdown-group -->
+                <div class="main_both">
                     <div class="main_visual">
                         <img src="./img/main_visual.jpg" alt="">
                     </div><!-- //.main_visual -->
-                    <article class="map_right">
-                        <div class="map_right_top">
-                            <h2>
-                                협재해수욕장
-                                <a href="#"><img src="../oceantrip/img/main_arrow.png" alt="넘어가기아이콘"></a>
-                            </h2>
-                            <p>제주특별자치도 제주시 한림읍
-                                한림로 329-10
-                                <img src="img/main_loca.png" alt="주소아이콘">
-                            </p>
-                            <div class="main_today">
-                                <img src="./img/main_weather.png" alt="구름해">
-                                <div class="main_today_txt">
-                                    <h3>10</h3>
-                                    <span>°C</span>
-                                    <p>오늘</p>
-                                    <em>11°C / 7°C</em>
-                                </div><!-- //.main_today_txt -->
-                                <ul class="main_today_sun">
-                                    <li class="sun_up">
-                                        <p>일출 07:43</p>
-                                        <img src="img/sun_up.png" alt="일출">
-                                    </li><!-- //.sun_up -->
-                                    <li class="sun_down">
-                                        <p>일몰 19:38</p>
-                                        <img src="img/sun_down.png" alt="일몰">
-                                    </li><!-- //.sun_down -->
-                                </ul><!-- main_today_sun -->
-                            </div><!-- //.main_today -->
+                    <article class="main_right">
+                        <div class="main_right_top">
+                            <div class="main_right_top_inner">
+                                <div class="main_right_top_tit">
+                                    <span>운영중</span>
+                                    <h2>
+                                        협재 해수욕장
+                                        <a href="#"><img src="./img/main_arrow.png" alt="넘어가기아이콘"></a>
+                                    </h2>
+                                    <p>제주특별자치도 제주시 한림읍
+                                        한림로 329-10
+                                    </p>
+                                </div><!-- //.main_right_top_tit -->
+                                <div class="main_today">
+                                    <div class="main_today_img">
+                                        <img src="./img/main_weather.png" alt="구름 많음">
+                                        <p>구름 많음</p>
+                                    </div><!-- //.main_today_img -->
+                                    <div class="main_today_txt">
+                                        <h3>10.5°</h3>
+                                        <div class="main_today_txt_scale">
+                                            <p class="low">7°</p>
+                                            <span>/</span>
+                                            <p class="high">11°</p>
+                                        </div>
+                                    </div><!-- //.main_today_txt -->
+                                    <ul class="main_today_sun">
+                                        <li class="sun_up">
+                                            <span>일출</span>
+                                            <p>07:43</p>
+                                        </li><!-- //.sun_up -->
+                                        <li class="sun_down">
+                                            <span>일몰</span>
+                                            <p>19:38</p>
+                                        </li><!-- //.sun_down -->
+                                    </ul><!-- main_today_sun -->
+                                </div><!-- //.main_today -->
+                            </div><!-- //.main_right_top_inner -->
                             <div class="main_right_go">
-                                <img src="img/main_loca_fill.png" alt="길찾기">
                                 <p>길찾기</p>
                                 <ul class="go_icons">
                                     <li><a href="#"><img src="img/main_kakao.png" alt=""></a></li>
                                     <li><a href="#"><img src="img/main_naver.png" alt=""></a></li>
                                 </ul><!-- //.go_icons -->
                             </div><!-- //.main_right_go -->
-                        </div><!-- //.map_right_top -->
-                        <div class="map_right_bottom">
+                        </div><!-- //.main_right_top -->
+                        <div class="main_right_bottom">
                             <ul>
                                 <li>
-                                    <div class="main_circle"></div>
-                                    <p>맛집</p>
+                                    <a href="#">
+                                        <p>맛집</p>
+                                        <img src="img/main_arrow.png" alt="바로가기">
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="main_circle"></div>
-                                    <p>이색카페</p>
+                                    <a href="#">
+                                        <p>이색카페</p>
+                                        <img src="img/main_arrow.png" alt="바로가기">
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="main_circle"></div>
-                                    <p>자연경관</p>
-                                </li>
-                                <li>
-                                    <div class="main_circle"></div>
-                                    <p>축제일정</p>
-                                </li>
-                                <li>
-                                    <div class="main_circle"></div>
-                                    <p>생태계</p>
-                                </li>
-                                <li>
-                                    <div class="main_circle"></div>
-                                    <p>의료시설</p>
+                                    <a href="#">
+                                        <p>자연경관</p>
+                                        <img src="img/main_arrow.png" alt="바로가기">
+                                    </a>
                                 </li>
                             </ul>
-                        </div><!-- //.map_right_bottom -->
-                    </article><!-- //.map_right -->
-                </div><!-- //.map_both -->
+                        </div><!-- //.main_right_bottom -->
+                    </article><!-- //.main_right -->
+                </div><!-- //.main_both -->
             </div><!-- //.inner -->
-        </section><!-- //.map -->
+        </section><!-- //.hero -->
         <section class="greeting">
             <div class="inner">
                 <h2 class="greet">

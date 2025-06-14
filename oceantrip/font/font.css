@@ -12,6 +12,8 @@
     font-weight: 800;
     font-style: 'ExtraBold';
 }
+
+
 @font-face {
     font-family: 'DungGeunMo';
     src: url('../font/AnyConv.com__DungGeunMo.woff') format('woff');
@@ -42,3 +44,25 @@
     font-weight: 400;
     font-style: 'Regular';
 }
+
+
+
+/* 2차 */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
