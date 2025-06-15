@@ -596,7 +596,7 @@ transform: translateY(0); } */
     display: flex;
     align-items: flex-start;
     gap: 50px;
-    background: #F8F6EB;
+    background: #FFFFFC;
     padding-right: 300px;
     height: 500vh;
 }
