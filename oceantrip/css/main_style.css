@@ -109,26 +109,29 @@
 .notice ul li a {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: var(--main-white);
-    font-family: 'DungGeunMo';
+    font-family: var(--nanumGothic);
     letter-spacing: 1.2px;
+    font-size: 0.75em;
 }
 
 .notice ul li a img {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     object-fit: cover;
 }
 
 .notice ul li a p {
     padding: 0 16px;
-    color: var(--main-yellow);
-    border-right: 2px solid var(--main-white);
+    color: var(--sub-yellow);
+    border-right: 1px solid var(--main-white);
+    letter-spacing: 0.9px;
 }
 
 .notice ul li a span {
     padding: 0 16px;
+    
 }
 
 /* hero */
@@ -558,61 +561,54 @@
 
 .greeting .inner {
     padding: 200px 0;
-}
-
-.greeting .inner>h2.greet {
-    width: 100%;
-    height: 270px;
-    margin-bottom: 120px;
-}
-
-.greeting .inner>h2.greet>.greeting_top {
-    width: 100%;
-    height: 77px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 120px;
+    /* 플렉스 적용되면 clip 깨짐? */
 }
 
-.greeting .inner>h2.greet>.greeting_top>p {
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-.greeting .inner>h2.greet>.greeting_top>img {
-    width: 70px;
-    height: 70px;
-}
-
-.greeting .inner>h2.greet>p {
-    font-size: 67px;
+.greet {
+    width: 100%;
+    font-size: 3.4rem;
     font-family: var(--Stunning);
-    color: var(--main-black);
-    line-height: 1.4;
+    letter-spacing: -1.36px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.greeting .inner>h2.greet>p>span.text_container {
-    display: inline-block;
-    position: relative;
-    font-family: var(--Stunning);
-    font-size: 67px;
-    margin: 0 45px;
+
+.greeting_1 {
+    font-size: 1.8rem;
+    font-family: var(--pretendard);
 }
 
-.greeting .inner>h2.greet>p>span.text_container>span.overlay_text {
-    font-family: var(--TuesdayNight);
+.greeting_3 {
+    display: flex;
+    align-self: flex-end;
+}
+
+.greeting_3 span {
+    color: var(--sub-deepblue);
+}
+
+.greeting_4 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.greeting_4 .greeting_line {
+    width: 185px;
+    height: 8px;
+    background: linear-gradient(90deg, #1C68FF, #19B6EF);
+}
+
+.greeting_4 h2 {
     color: var(--main-skyblue);
-    font-size: 12rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -60%);
-    z-index: -1;
 }
 
-.greeting .inner>h2.greet>p>em {
-    position: relative;
-    z-index: -10;
-}
 
 .greeting_video {
     width: 100%;
@@ -620,6 +616,7 @@
     flex-direction: column;
     gap: 16px
 }
+
 /* .video_clip {
   width: 207px;
   height: 207px;
@@ -633,18 +630,19 @@
 } */
 
 .clipped-video {
-  width: 1280px;
-  height: 414px;
-  clip-path: url(#customClip);
-  -webkit-clip-path: url(#customClip); /* Safari 대응 */
+    width: 1280px;
+    height: 414px;
+    clip-path: url(#customClip);
+    -webkit-clip-path: url(#customClip);
+    /* Safari 대응 */
 }
 
 .video_clip video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-  
+
 
 
 /* info */

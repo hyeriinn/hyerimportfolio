@@ -11,22 +11,19 @@
 /* 변수선언,body{} */
 :root {
     --main-black: #3D363F;
-    --main-skyblue: #8AD1F4;
+    --main-skyblue: #19B6EF;
     --main-white: #FFFFFF;
     --main-grey: #DFDFDF;
     --main-light-grey: #FAFAFA;
     --main-grey50: #9E9B9F;
     --main-grey70: #787379;
-    --sub-red: #EF6330;
-    --sub-yellow: #FFD52F;
-    --sub-green: #1BB97A;
-    --sub-blue: #1C7AF3;
-    --sub-purple: #AC3DEC;
-    --sub-grey: #A1A1A1;
+    --sub-deepblue: #1A72E5;
+    --sub-yellow: #EAD430;
     --stroke-lightgrey: #e3e3e3;
     --hover-bg :#F6FBFF;
     --pretendard :  'pretendard', sans-serif;
     --nanumRound: 'NanumSquareRound';
+    --nanumGothic : 'NanumGothic';
     --dungenmo: 'DungGeunMo';
     --Soyomaple: 'SOYO_Maple';
     --Stunning: 'Stunning';
