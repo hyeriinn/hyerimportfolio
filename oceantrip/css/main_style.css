@@ -203,6 +203,7 @@
 }
 
 .dropdown-toggle {
+    width: 130px;
     padding: 8px 14px;
     font-size: 15px;
     border: 1px solid #aaa;
@@ -615,12 +616,11 @@
 
 .greeting_video {
     width: 100%;
-    height: 414px;
     display: flex;
     flex-direction: column;
     gap: 16px
 }
-.video_clip {
+/* .video_clip {
   width: 207px;
   height: 207px;
   -webkit-mask: url(#starClip);
@@ -630,6 +630,13 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   overflow: hidden;
+} */
+
+.clipped-video {
+  width: 1280px;
+  height: 414px;
+  clip-path: url(#customClip);
+  -webkit-clip-path: url(#customClip); /* Safari 대응 */
 }
 
 .video_clip video {
