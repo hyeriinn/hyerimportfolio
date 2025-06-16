@@ -739,7 +739,8 @@ transform: translateY(0); } */
     /* position: absolute; */
     /* background: yellow; */
 }
-#projects .projects_all .project4{
+
+#projects .projects_all .project4 {
     background: url(../img/project_frame_project4.png) center/contain no-repeat;
 
 }
@@ -1162,7 +1163,7 @@ transform: translateY(0); } */
 }
 
 #projects .projects_all .project4 .detail_contents .color ul li:nth-child(2) span {
-   
+
     background: #0b5578;
 
 }
@@ -1183,13 +1184,56 @@ transform: translateY(0); } */
     background: rgba(182, 169, 153, 0.9);
 }
 
+#projects .projects_all .project5 .detail_contents .concept .concept1 {
+    background: rgba(212, 194, 178, 0.3);
+
+}
+
+#projects .projects_all .project5 .detail_contents .concept .concept2 {
+    margin-top: -24px;
+    background: rgba(212, 194, 178, 0.6);
+
+}
+
+#projects .projects_all .project5 .detail_contents .concept .concept3 {
+    margin-top: -24px;
+    background: rgba(212, 194, 178, 0.9);
+}
+
+#projects .projects_all .project5 .detail_contents .color ul li:nth-child(1) span {
+    background: #AF040A;
+}
+
+#projects .projects_all .project5 .detail_contents .color ul li:nth-child(2) span {
+    background: #D4C2B2;
+}
+
+#projects .projects_all .project5 .detail_contents .color ul li:nth-child(3) span {
+    background: #1A1A1A;
+}
+
+#projects .projects_all .project5 .detail_contents .typo .typo_bottom {
+    /* color: #1B4D3F; */
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+}
+
+#projects .projects_all .project_detail .detail_contents .overview p strong {
+    color: #AF040A;
+    font-family: "Pretendard Variable";
+    font-weight: 700;
+
+}
+
+
 
 #projects .projects_all .project4 .detail_contents .typo .typo_bottom {
     /* color: #1B4D3F; */
     font-family: var(--suit);
     font-weight: 700;
 }
-#projects .projects_all .project4 .detail_contents .headline p{
+
+#projects .projects_all .project4 .detail_contents .headline p {
     font-family: var(--suit);
     line-height: 1;
 
@@ -1201,7 +1245,8 @@ transform: translateY(0); } */
 
     line-height: 1.8;
 }
-#projects .projects_all .project4 .detail_contents .overview p strong{
+
+#projects .projects_all .project4 .detail_contents .overview p strong {
     color: #0b5578;
     font-weight: 700;
 }
@@ -1219,7 +1264,7 @@ transform: translateY(0); } */
 
 #projects .project4 .project_go {
     justify-content: flex-end;
-    
+
 }
 
 
