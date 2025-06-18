@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loop: true,
       centeredSlides: true,
       spaceBetween: 100,
-      slidesPerView: 1.5,
+      slidesPerView: 1,
       navigation: {
         nextEl: ".photo_slide .prev_next .next",
         prevEl: ".photo_slide .prev_next .prev",
