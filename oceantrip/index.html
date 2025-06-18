@@ -351,15 +351,21 @@
                             근처 해변 찾아보기
                             <img src="img/route_subtitle_title_icon.png" alt="돋보기">
                         </h2>
-                        <a class="next">
-                            <p>다른 지역으로 설정 </p>
-                            <img src="./img/arrow_down.svg" alt="다음">
-                        </a><!-- //.next -->
+                        <div class="title_btn">
+                            <a class="next">
+                                <p>여행 지역</p>
+                                <img src="./img/arrow_down.svg" alt="다음">
+                            </a><!-- //.next -->
+                            <a class="next">
+                                <p>해변 이름을 선택해 주세요. </p>
+                                <img src="./img/arrow_down.svg" alt="다음">
+                            </a><!-- //.next -->
+                        </div>
                     </div><!-- //.title_bottom -->
                 </div><!-- //.tit -->
                 <article class="route_contents" data-aos="fade-right" data-aos-duration="600">
-                    <div class="route_now_place" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
-                        <div class="route_place_txt">
+                    <div class="route_now_place" data-aos="fade-right" data-aos-duration="600">
+                        <div class="now_place_txt">
                             <div class="now_loca">
                                 <img src="./img/fluent_location-28-filled.svg" alt="위치">
                                 <p>현위치</p>
@@ -372,6 +378,22 @@
                     <ul>
                         <li class="route_place">
                             <a href="#">
+                                <div class="route_time">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/route_time_car.svg" alt="자동차">
+                                            <p>자동차</p>
+                                        </li>
+                                        <li>
+                                            <img src="./img/route_time_clock.svg" alt="소요시간">
+                                            <p>19분</p>
+                                        </li>
+                                        <li>
+                                            <img src="./img/route_time_loca.svg" alt="위치">
+                                            <p>11km</p>
+                                        </li>
+                                    </ul>
+                                </div><!-- //.route_time -->
                                 <img src="img/route_location_img1.jpg" alt="곽지해변">
                                 <div class="route_place_txt" data-aos="fade-right" data-aos-duration="600"
                                     data-aos-delay="300">
@@ -387,6 +409,22 @@
                         </li><!-- //.route_place -->
                         <li class="route_place">
                             <a href="#">
+                                <div class="route_time">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/route_time_car.svg" alt="자동차">
+                                            <p>자동차</p>
+                                        </li>
+                                        <li>
+                                            <img src="./img/route_time_clock.svg" alt="소요시간">
+                                            <p>1분</p>
+                                        </li>
+                                        <li>
+                                            <img src="./img/route_time_loca.svg" alt="위치">
+                                            <p>0.7km</p>
+                                        </li>
+                                    </ul>
+                                </div><!-- //.route_time -->
                                 <img src="img/route_location_img3.jpg" alt="금능해변">
                                 <div class="route_place_txt" data-aos="fade-right" data-aos-duration="600"
                                     data-aos-delay="300">
@@ -410,8 +448,8 @@
                     <p>어디로 가는게 좋을까?</p>
                     <div class="title_bottom">
                         <h2>
-                            [ 강원도 ] 국내 해변 혼잡도
-                            <img src="img/route_subtitle_title_icon2.png" alt="돋보기">
+                            모래? 갯벌? 암석? 취향대로!
+                            <img src="./img/congest_icon.png" alt="해변">
                         </h2>
                         <a href="#" class="next">
                             <p>다른 지역으로 설정 </p>
@@ -422,39 +460,39 @@
                 <article class="congest_contents">
                     <div class="congest_circle circle1">
                         <button type="button" class="congest_center">
-                            <p>여유</p>
+                            <p>모래</p>
                         </button>
                         <ul class="congest_green">
                             <li class="comment1">
                                 <div class="comment_txt">
-                                    <span>강릉</span>
-                                    <strong>사천</strong>
+                                    <span>동해시</span>
+                                    <strong>망상</strong>
                                 </div><!-- //.comment_txt -->
                             </li>
                             <li class="comment2 ">
                                 <div class="comment_txt">
-                                    <span>양양</span>
-                                    <strong>오산</strong>
+                                    <span>삼척시</span>
+                                    <strong>후진</strong>
                                 </div><!-- //.comment_txt -->
                             </li>
                             <li class="comment3">
                                 <div class="comment_txt">
-                                    <span>삼척</span>
-                                    <strong>문암</strong>
+                                    <span>속초시</span>
+                                    <strong>속초</strong>
                                 </div><!-- //.comment_txt -->
 
                             </li>
                             <li class="comment4">
                                 <div class="comment_txt">
-                                    <span>고성</span>
-                                    <strong>천진</strong>
+                                    <span>강릉시</span>
+                                    <strong>강릉</strong>
                                 </div><!-- //.comment_txt -->
                             </li>
                         </ul><!-- //.congest_green -->
                     </div><!-- //.congest_circle1 -->
                     <div class="congest_circle circle2">
                         <button>
-                            <p>혼잡</p>
+                            <p>갯벌</p>
                         </button>
                         <ul class="congest_red">
                             <li class="comment5">
@@ -485,7 +523,7 @@
                     </div><!-- //.congest_circle2 -->
                     <div class="congest_circle circle3">
                         <button>
-                            <p>보통</p>
+                            <p>자갈</p>
                         </button>
                         <ul class="congest_yellow">
                             <li class="comment9">
@@ -523,124 +561,126 @@
                     <p>어디로 가는게 좋을까?</p>
                     <div class="title_bottom">
                         <h2>
-                            [ 강문 ] 해변 맛집 <img src="img/route_subtitle_title_icon3.png" alt="식사">
+                            해변 주변 맛집 알아보기<img src="img/route_subtitle_title_icon3.png" alt="식사">
                         </h2>
-                        <a href="#" class="next">
-                            <p>다른 지역으로 설정</p>
-                            <img src="./img/arrow_down.svg" alt="다음">
-                        </a> <!-- //.next -->
+                        <div class="title_btn">
+                            <a class="next">
+                                <p>여행 지역</p>
+                                <img src="./img/arrow_down.svg" alt="다음">
+                            </a><!-- //.next -->
+                            <a class="next">
+                                <p>해변 이름을 선택해 주세요. </p>
+                                <img src="./img/arrow_down.svg" alt="다음">
+                            </a><!-- //.next -->
+                        </div>
                     </div><!-- //.title_bottom -->
                 </div><!-- //.tit -->
                 <div class="place_contents">
                     <article class="place_card1">
                         <div class="place_card_top">
-                            <div class="card_title">
-                                <span>강릉 강문해변</span>
-                                <h3>동화가든</h3>
-                            </div><!-- //.card_title -->
                             <div class="card_star">
-                                <img src="../oceantrip/img/place_star.png" alt="별">
+                                <img src="./img/place_star.png" alt="별">
                                 <p>3.6</p>
                                 <em>(6,743)</em>
                             </div><!--//.card_star -->
+                            <div class="card_hash_list">
+                                <div class="card_hash_top card_hash">
+                                    <p>#강릉하면_초당순두부</p>
+                                    <img src="img/place2_hashtag_icon1.png" alt="국">
+                                </div>
+                                <div class="card_hash_bottom">
+                                    <div class="card_hash">
+                                        <p>#친절한_직원</p>
+                                        <img src="img/place1_hashtag_icon2.png" alt="직원">
+                                    </div>
+                                    <div class="card_hash">
+                                        <p>#웨이팅_필수</p>
+                                        <img src="img/place1_hashtag_icon3.png" alt="시계">
+                                    </div>
+                                </div>
+                            </div><!--//.card_hash_list -->
                         </div><!-- //.place_card_top -->
                         <div class="place_card_bottom">
-                            <div class="place_loca">
-                                <img src="img/main_loca_fill.png" alt="위치">
-                                <p>강릉시 초당순두부길77번길 15</p>
-                            </div><!-- //.place_loca -->
-                            <ul>
-                                <li>
-                                    <p>#강릉하면_초당순두부</p>
-                                    <img src="img/place1_hashtag_icon1.png" alt="국">
-                                </li>
-                                <li>
-                                    <p>#친절한_직원</p>
-                                    <img src="img/place1_hashtag_icon2.png" alt="직원">
-                                </li>
-                                <li>
-                                    <p>#웨이팅_필수</p>
-                                    <img src="img/place1_hashtag_icon3.png" alt="시계">
-                                </li>
-                            </ul>
+                            <div class="card_title">
+                                <span>강릉 강문해변</span>
+                                <h3>동화가든</h3>
+                                <div class="place_loca">
+                                    <img src="img/main_loca_fill.png" alt="위치">
+                                    <p>강릉시 초당순두부길77번길 15</p>
+                                </div><!-- //.place_loca -->
+                            </div><!-- //.card_title -->
                         </div><!-- //.place_card_bottom -->
-                        <div class="place_img">
-                            <img src="img/card_img1.jpg" alt="순두부찌개">
-                        </div><!-- //.place_img -->
                     </article><!-- place_card1 -->
                     <article class="place_card2">
                         <div class="place_card_top">
+                            <div class="card_star">
+                                <img src="./img/place_star.png" alt="별">
+                                <p>3.6</p>
+                                <em>(1,007)</em>
+                            </div><!--//.card_star -->
+                            <div class="card_hash_list">
+                                <div class="card_hash_top card_hash">
+                                    <p>#시그니처_흑임자라떼</p>
+                                    <img src="img/place2_hashtag_icon1.png" alt="라떼">
+                                </div>
+                                <div class="card_hash_bottom">
+                                    <div class="card_hash">
+                                        <p>#애견동반가능</p>
+                                        <img src="img/place2_hashtag_icon2.png" alt="강아지">
+                                    </div>
+                                    <div class="card_hash">
+                                        <p>#강릉_핫플</p>
+                                        <img src="img/place2_hashtag_icon3.png" alt="hot">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- //.place_card_top -->
+                        <div class="place_card_bottom">
                             <div class="card_title">
                                 <span>강릉 강문해변</span>
                                 <h3>카페 툇마루</h3>
+                                <div class="place_loca">
+                                    <img src="img/main_loca_fill.png" alt="위치">
+                                    <p>강릉시 난설헌로</p>
+                                </div><!-- //.place_loca -->
                             </div><!-- //.card_title -->
-                            <div class="card_star">
-                                <img src="../oceantrip/img/place_star.png" alt="별">
-                                <p>3.9</p>
-                                <em>(1,987)</em>
-                            </div><!--//.card_star -->
-                        </div><!-- //.place_card_top -->
-                        <div class="place_card_bottom">
-                            <div class="place_loca">
-                                <img src="img/main_loca_fill.png" alt="위치">
-                                <p>강원특별자치도 강릉시 난설헌로 232</p>
-                            </div><!-- //.place_loca -->
-                            <ul>
-                                <li>
-                                    <p>#강릉_핫플</p>
-                                    <img src="img/place2_hashtag_icon1.png" alt="국">
-                                </li>
-                                <li>
-                                    <p>#흑임자_라떼</p>
-                                    <img src="img/place2_hashtag_icon3.png" alt="시계">
-                                </li>
-                                <li>
-                                    <p>#애견동반가능</p>
-                                    <img src="img/place2_hashtag_icon2.png" alt="직원">
-                                </li>
-                            </ul>
                         </div><!-- //.place_card_bottom -->
-                        <div class="place_img">
-                            <img src="img/place_card_img2.jpg" alt="흑임자라떼">
-                        </div><!-- //.place_img -->
-                    </article><!-- //.place_card2 -->
+                    </article><!-- place_card2 -->
                     <article class="place_card3">
                         <div class="place_card_top">
+                            <div class="card_star">
+                                <img src="./img/place_star.png" alt="별">
+                                <p>3.7</p>
+                                <em>(136)</em>
+                            </div><!--//.card_star -->
+                             <div class="card_hash_list">
+                                <div class="card_hash_top card_hash">
+                                    <p>#시원한_국물</p>
+                                    <img src="img/place3_hashtag_icon1.png" alt="얼음">
+                                </div>
+                                <div class="card_hash_bottom">
+                                    <div class="card_hash">
+                                        <p>#로컬_맛집</p>
+                                        <img src="img/place3_hashtag_icon2.png" alt="로컬">
+                                    </div>
+                                    <div class="card_hash">
+                                        <p>#가성비_굿</p>
+                                        <img src="img/place3_hashtag_icon3.png" alt="굿">
+                                    </div>
+                                </div>
+                            </div><!--//.card_hash_list -->
+                        </div><!-- //.place_card_top -->
+                        <div class="place_card_bottom">
                             <div class="card_title">
                                 <span>강릉 강문해변</span>
                                 <h3>뚱보냉면</h3>
+                                <div class="place_loca">
+                                    <img src="img/main_loca_fill.png" alt="위치">
+                                    <p>강릉시 포남동 강릉대로 419번길 17</p>
+                                </div><!-- //.place_loca -->
                             </div><!-- //.card_title -->
-                            <div class="card_star">
-                                <img src="../oceantrip/img/place_star.png" alt="별">
-                                <p>3.9</p>
-                                <em>(197)</em>
-                            </div><!--//.card_star -->
-                        </div><!-- //.place_card_top -->
-                        <div class="place_card_bottom">
-                            <div class="place_loca">
-                                <img src="img/main_loca_fill.png" alt="위치">
-                                <p>강릉시 포남동 강릉대로419번길 17 </p>
-                            </div><!-- //.place_loca -->
-                            <ul>
-                                <li>
-                                    <p>#시원~한_국물</p>
-                                    <img src="img/place3_hashtag_icon1.png" alt="국">
-                                </li>
-                                <li>
-                                    <p>#가성비_굿</p>
-                                    <img src="img/place3_hashtag_icon3.png" alt="직원">
-                                </li>
-                                <li>
-                                    <p>#로컬_맛집</p>
-                                    <img src="img/place3_hashtag_icon2.png" alt="시계">
-                                </li>
-                            </ul>
                         </div><!-- //.place_card_bottom -->
-                        <div class="place_img">
-                            <img src="img/place_card_img3.jpg" alt="냉면">
-                        </div><!-- //.place_img -->
-                    </article><!-- //.place_card3 -->
-
+                    </article><!-- place_card3 -->
                 </div><!-- //.place_contents -->
             </div><!-- //.inner -->
         </section><!-- //.place -->

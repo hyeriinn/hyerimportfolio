@@ -19,6 +19,7 @@
     --main-grey70: #787379;
     --sub-deepblue: #1A72E5;
     --sub-yellow: #EAD430;
+    --bg-skyblue : #EEFAFF;
     --stroke-lightgrey: #e3e3e3;
     --hover-bg :#F6FBFF;
     --button-skyblue : #87D8FE;
@@ -123,7 +124,7 @@ nav ul.gnb>li>a {
     border-radius: 50px;
     outline-style: none;
     border: none;
-    background: var(--main-grey);
+    background: #EBF9FF;
     padding-left: 16px;
 }
 
