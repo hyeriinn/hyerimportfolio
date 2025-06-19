@@ -36,10 +36,16 @@ body {
     background: var(--main-black);
 }
 
+
+
 .wrap {
     width: 100%;
     position: relative;
     /* overflow: hidden; */
+}
+.wrap::selection {
+     background: var(--sub-green);
+    color: var(--main-black);
 }
 
 

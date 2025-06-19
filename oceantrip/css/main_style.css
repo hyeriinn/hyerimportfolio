@@ -79,6 +79,7 @@
 }
 
 .notice .simply-scroll {
+    width: 100%;
     display: flex;
     cursor: pointer;
 }
@@ -88,6 +89,8 @@
     height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
+
 }
 
 .simply-scroll .simply-scroll-clip {
@@ -105,7 +108,7 @@
 
 .notice ul li {
     gap: 16px;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .notice ul li a {
@@ -819,7 +822,7 @@
 
 .info>.inner>ul>li>a>p {
     width: 100%;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     font-weight: 500;
     color: var(--main-black);
     text-align: center;
@@ -1150,7 +1153,13 @@
     border-radius: 20px;
     background: rgba(151, 205, 239, 1);
     box-shadow: 3px 3px 4px rgba(51, 54, 67, 0.2);
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.6 linear;
+}
 
+.place_contents article:hover {
+    transform: translateY(10px);
 }
 
 
@@ -1374,8 +1383,8 @@
 .photo_contents {
     width: 100%;
     display: flex;
-    max-width: 1200px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* max-width: 1200px; */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
     position: relative;
 }
 
