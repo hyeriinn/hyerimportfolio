@@ -75,12 +75,13 @@
     background: #222;
     display: flex;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
 .notice .simply-scroll {
     /* display: flex; */
+    width: 100%;
     cursor: pointer;
 }
 
