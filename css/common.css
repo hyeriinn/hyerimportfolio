@@ -753,6 +753,10 @@ transform: translateY(0); } */
 
 #projects .projects_all .project4 {
     background: url(../img/project_frame_project4.png) center/contain no-repeat;
+}
+
+#projects .projects_all .project3 {
+    background: url(../img/project_frame_project4.png) center/contain no-repeat;
 
 }
 
@@ -1277,6 +1281,12 @@ transform: translateY(0); } */
     justify-content: flex-end;
 
 }
+
+#projects .project3 .project_go {
+    justify-content: flex-end;
+
+}
+
 
 
 #projects .project_detail .project_go div {

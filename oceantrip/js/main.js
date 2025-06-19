@@ -1,3 +1,11 @@
+$(function () {
+  /* notice - simplyScroll */
+  $('.noticeAni').simplyScroll({
+    speed: 10,
+    direction: 'backwards',
+    frameRate: 10,
+  });
+})
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
 
@@ -6,12 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     $('header').toggleClass('on');
   })
 
-  /* notice - simplyScroll */
-  $('.noticeAni').simplyScroll({
-    speed: 10,
-    direction: 'backwards',
-    frameRate: 10,
-  });
+
 
   /* main select */
   let data = {
@@ -179,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
       habitat: "태평양, 대서양, 인도양의 열대 및 아열대 바다",
       danger: "해양 오염, 불법 포획, 기후 변화로 인한 산란지 파괴"
     },
-        {
+    {
       rank: "멸종위기동물 1급",
       title: "남방큰돌고래",
       name: "Tursiops aduncus",

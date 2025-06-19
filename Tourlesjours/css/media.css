@@ -1,17 +1,39 @@
 @charset "utf-8";
 
-@media screen and (max-width:1588px) {
+@media screen and (max-width:1589px) {
     .new ul.slide>li .new_inner {
         width: 70%;
     }
 
+
+    /* products */
+    .products {
+        width: 100%;
+        padding: 120px 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
     .products .tray {
+        width: 100%;
         background: url(../img/tray_tablet.png) center/contain no-repeat;
     }
 
+
     .products .tray ul {
-        width: 80%;
-        height: 80%;
+        width: 50%;
+
+    }
+
+    .products .tray ul li {
+        width: 35%;
+        height: 35%;
+    }
+
+    .products .tray ul li a h3 {
+        display: block
     }
 
     footer {
@@ -30,6 +52,17 @@
         display: none;
     }
 
+
+    .new_inner{
+        gap: 10%;
+    }
+
+    .new .new_prev>img, .new_next>img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+
 }
 
 @media screen and (max-width:1394px) {
@@ -40,7 +73,7 @@
 
 
     main {
-        margin-top: 80px;
+        margin-top: 0;
     }
 
     .column_left,
@@ -97,7 +130,18 @@
 
     header nav .gnb li.logo {
         display: block;
-        width: 182px;
+        width: 200px;
+        height: 100%;
+        flex: 0 0 auto;
+        position: relative;
+        left: calc(50% + 24px);
+        transform: translateX(-50%);
+    }
+
+
+    header nav .gnb li.logo h1 {
+        display: block;
+        width: 100%;
         height: 100%;
     }
 
@@ -108,10 +152,7 @@
         align-items: center;
     }
 
-    header nav .gnb li.logo h1 a img {
-        width: 280px;
-        object-fit: cover;
-    }
+
 
     header .ham {
         display: block;
@@ -126,11 +167,11 @@
 
     .column_left,
     .column_right {
-        display: none
+        display: none;
     }
 
     main {
-        margin-top: 0;
+        /* margin-top: 0; */
     }
 
     /* main_visual */
@@ -227,32 +268,7 @@
         width: 50px;
     }
 
-    /* products */
-    .products {
-        width: 100%;
-        padding: 120px 50px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-    }
-
-
-
-    .products .tray ul {
-        width: 90%;
-        height: 70%;
-
-    }
-
-    .products .tray ul li {
-        width: 35%;
-        height: 35%;
-    }
-
-    .products .tray ul li a h3 {
-        display: block
-    }
 
 
 
@@ -329,7 +345,7 @@
     }
 
     .promo ul {
-        width: 110%;
+        width: 90%;
         gap: 24px;
         justify-content: space-between;
     }
