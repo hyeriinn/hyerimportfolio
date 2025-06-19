@@ -75,37 +75,34 @@
     background: #222;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
+
 .notice .simply-scroll {
-    display: flex;
+    /* display: flex; */
     cursor: pointer;
 }
 
-.noticeAni {
+ul.noticeAni {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.simply-scroll .simply-scroll-clip {
-    overflow: hidden;
-    /* 있어야 움직임 */
-    display: flex;
-}
-
-.notice ul {
-    width: 100%;
     display: flex;
     align-items: center;
     white-space: nowrap;
 }
 
+.simply-scroll .simply-scroll-clip {
+    width: 100%;
+    overflow: hidden;
+    /* 있어야 움직임 */
+    /* display: flex; */
+}
+
+
 .notice ul li {
-    gap: 16px;
-    flex: 1;
+    /* gap: 16px; */
+    /* flex: 1; */
 }
 
 .notice ul li a {
@@ -1377,6 +1374,7 @@
     max-width: 1200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative;
+    padding-bottom: 10px;
 }
 
 
@@ -1478,7 +1476,8 @@
     display: flex;
     justify-content: space-between;
 }
-.photo_txt_title b{
+
+.photo_txt_title b {
     width: 120px;
     height: 30px;
     text-align: center;
@@ -1547,9 +1546,12 @@
 
 }
 
-.swiper-scrollbar {
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 50%;
+    left: 50%;
+    transform: translateX(-150%);
+    width: 25%;
+    /* background: yellow; */
 }
