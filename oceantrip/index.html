@@ -55,7 +55,10 @@
             </clipPath>
         </svg> -->
         <h1 class="logo">
-            <a href="#"><img src="./img/logo.png" alt="ocean trip"></a>
+            <a href="#">
+                <!-- <img src="./img/logo.png" alt="ocean trip"> -->
+                 oceantrip
+            </a>
         </h1>
         <nav>
             <ul class="gnb">
@@ -154,35 +157,42 @@
                 <img src="./img/main_vector.svg" alt="메인데코벡터">
             </div><!-- ///.main_vector -->
             <div class="inner">
-                <div class="dropdown-group">
-                    <div class="dropdown" data-type="region">
-                        <button class="dropdown-toggle">여행 지역</button>
-                        <ul class="dropdown-menu">
-                            <li data-value="busan">부산</li>
-                            <li data-value="ulsan">울산</li>
-                            <li data-value="jeju">제주</li>
-                            <li data-value="gyeonggi">경기</li>
-                            <li data-value="incheon">인천</li>
-                            <li data-value="chungnam">충남</li>
-                            <li data-value="jeonbuk">전북</li>
-                            <li data-value="jeonnam">전남</li>
-                            <li data-value="gangwon">강원</li>
-                            <li data-value="geongbuk">경북</li>
-                            <li data-value="geongnam">경남</li>
-                        </ul>
-                        <div class="dropdown" data-type="city">
-                            <button class="dropdown-toggle">도시</button>
-                            <ul class="dropdown-menu"></ul>
-                        </div>
-                        <div class="dropdown" data-type="beach">
-                            <button class="dropdown-toggle">해수욕장</button>
-                            <ul class="dropdown-menu"></ul>
-                        </div>
-                        <button type="submit">
-                            <img src="img/tabler_send.svg" alt="전송">
-                        </button>
-                    </div><!-- //.main_top -->
-                </div><!-- //.dropdown-group -->
+                <div class="dropdown-wrap">
+                    <div class="dropdown-group">
+                        <div class="dropdown" data-type="region">
+                            <button class="dropdown-toggle">제주</button>
+                            <ul class="dropdown-menu dropdown-menu-1">
+                                <li data-value="busan">부산</li>
+                                <li data-value="ulsan">울산</li>
+                                <li data-value="jeju" class="selected">제주</li>
+                                <li data-value="gyeonggi">경기</li>
+                                <li data-value="incheon">인천</li>
+                                <li data-value="chungnam">충남</li>
+                                <li data-value="jeonbuk">전북</li>
+                                <li data-value="jeonnam">전남</li>
+                                <li data-value="gangwon">강원</li>
+                                <li data-value="geongbuk">경북</li>
+                                <li data-value="geongnam">경남</li>
+                            </ul>
+                            <div class="dropdown" data-type="city">
+                                <button class="dropdown-toggle ">제주시</button>
+                                <ul class="dropdown-menu
+                                dropdown-menu-2">
+                                    <li class="selected">제주시</li>
+                                </ul>
+                            </div>
+                            <div class="dropdown" data-type="beach">
+                                <button class="dropdown-toggle dropdown-toggle-3">협재해수욕장</button>
+                                <ul class="dropdown-menu dropdown-menu-3">
+                                    <li class="selected">협재해수욕장</li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="main_submit">
+                                <img src="img/tabler_send.svg" alt="전송">
+                            </button>
+                        </div><!-- //.main_top -->
+                    </div><!-- //.dropdown-group -->
+                </div><!-- //.dropdown-wrap -->
                 <div class="main_both">
                     <div class="main_visual">
                         <img src="./img/main_visual.jpg" alt="">
@@ -704,28 +714,36 @@
                     <div class="swiper photo_slide">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide photo1">
-                                <a href="#"><img src="img/photo1.jpg" alt="바다거북"></a>
+                                <a href="#"><img src="img/photo1.jpg" alt="청다리도요사촌"></a>
                             </div>
                             <div class="swiper-slide photo2">
-                                <a href="#"><img src="img/photo2.jpg" alt="청다리도요사촌"></a>
+                                <a href="#"><img src="img/photo2.jpg" alt="바다거북"></a>
                             </div>
                             <div class="swiper-slide photo3">
                                 <a href="#"><img src="img/photo3.jpg" alt="돌고래"></a>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="prev_next">
-                            <div class="prev">
-                                <img src="./img/slide_prev.svg" alt="슬라이드화살표">
-                            </div>
-                            <div class="next">
-                                <img src="./img/slide_next.svg" alt="슬라이드화살표">
-                            </div>
-                        </div><!-- //.prev_next -->
                     </div><!-- //.photo_slide -->
+                    <div class="slide_prev">
+                    </div>
+                    <div class="slide_next">
+                    </div>
+                     <div class="swiper-scrollbar"></div>
                     <div class="photo_info">
-                        <div class="photo_info_txt">
+                        <div class="photo_info_txt" id="info-text">
+                            <div class="photo_txt_title">
+                                <div class="photo_txt_title_L">
+                                    <h2></h2>
+                                    <em></em>
+                                </div><!-- //.photo_txt_title_L -->
+                                <div class="photo_txt_title_R">
+                                    <!-- <b data-type="rank"></b> -->
+                                </div><!-- //.photo_txt_title_R -->
+                                <div class="photo_txt_body">
 
+                                </div><!-- //photo_txt_body -->
+
+                            </div><!-- //.photo_info_txt -->
                         </div><!-- //photo_info_txt -->
                     </div><!-- /.photo_info -->
                 </div><!-- //.photo_contents -->

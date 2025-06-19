@@ -157,12 +157,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
   );
-  VanillaTilt.init(document.querySelector(".profile_contents"), {
+/*   VanillaTilt.init(document.querySelector(".profile_contents"), {
     max: 15,
     speed: 400,
     glare: false,
     "max-glare": 0.2,
-  })
+  }) */
   // ✅ rock - projects 진입 시 이동
 
   const projectTL = gsap.timeline();

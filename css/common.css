@@ -348,7 +348,7 @@ section h2 {
     /* background: #ddd; */
     position: absolute;
     left: 0;
-    top: 180px;
+    top: 200px;
 }
 
 #profile .profile_contents .greet .greet_txt {
@@ -415,9 +415,12 @@ section h2 {
 #profile .profile_contents .personality>div>.per_eng {
     font-family: var(--Adamina);
     transform: translateY(0px);
-    transition: 1s;
+}
 
 
+#profile .profile_contents .personality>div:hover>.per_eng {
+    display: none;
+    transform: translateY(-100px);
 }
 
 #profile .profile_contents .personality>div>.per_kor {
@@ -425,12 +428,6 @@ section h2 {
     font-family: var(--Simplehae);
     transform: translateY(-100px);
 }
-
-#profile .profile_contents .personality>div:hover>.per_eng {
-    display: none;
-    transform: translateY(-100px);
-}
-
 
 #profile .profile_contents .personality>div:hover>.per_kor {
     display: block;
@@ -664,6 +661,14 @@ transform: translateY(0); } */
 
 #projects .project_left .project_sub ul li.sub3 a h3 {
     font-family: 'Stunning';
+}
+
+#projects .project_left .project_sub ul li.sub5 a h3 {
+    font-family: var(--suit);
+}
+
+#projects .project_left .project_sub ul li.sub5 a h3 {
+    font-family: "DM Serif Display", serif;
 }
 
 #projects .project_left .project_sub ul li.sub4 a h3 {}
@@ -1218,7 +1223,7 @@ transform: translateY(0); } */
     font-weight: 700;
 }
 
-#projects .projects_all .project_detail .detail_contents .overview p strong {
+#projects .projects_all .project5 .detail_contents .overview p strong {
     color: #AF040A;
     font-family: "Pretendard Variable";
     font-weight: 700;

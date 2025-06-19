@@ -4,7 +4,7 @@
 /*  font-family: "Poppins", sans-serif; */
 
 * {
-    
+
     box-sizing: border-box;
 }
 
@@ -19,13 +19,13 @@
     --main-grey70: #787379;
     --sub-deepblue: #1A72E5;
     --sub-yellow: #EAD430;
-    --bg-skyblue : #EEFAFF;
+    --bg-skyblue: #EEFAFF;
     --stroke-lightgrey: #e3e3e3;
-    --hover-bg :#F6FBFF;
-    --button-skyblue : #87D8FE;
-    --pretendard :  'pretendard', sans-serif;
+    --hover-bg: #F6FBFF;
+    --button-skyblue: #87D8FE;
+    --pretendard: 'pretendard', sans-serif;
     --nanumRound: 'NanumSquareRound';
-    --nanumGothic : 'NanumGothic';
+    --nanumGothic: 'NanumGothic';
     --dungenmo: 'DungGeunMo';
     --Soyomaple: 'SOYO_Maple';
     --Stunning: 'Stunning';
@@ -63,12 +63,18 @@ header {
     cursor: pointer;
 }
 
-.logo a img {
+.logo a {
+    font-family: var(--Stunning);
+    font-size: 1.8rem;
+    letter-spacing: -2.16px;
+    color: var(--main-skyblue);
+}
+
+/* .logo a img {
     width: 226px;
     height: 50px;
     object-fit: cover;
-
-}
+} */
 
 nav {
     flex: 1;
@@ -161,41 +167,46 @@ nav ul.gnb>li>a {
     height: 100%;
     object-fit: cover;
 }
+
 header .fix {
     /* display: none; */
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, .5);
     position: fixed;
-    left: 0; top: -100%;
+    left: 0;
+    top: -100%;
 
 }
+
 header.on .fix {
     top: 0;
 }
 
 header .fix .fix_inner {
-    width: 100%; 
+    width: 100%;
     height: 70vh;
     background: rgba(255, 255, 255, 1);
     padding: 0 320px;
     /* display: flex; */
 }
-header .fix .fix_inner .fix_icon{
-   width: 100%;
-   height: 89px;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
+
+header .fix .fix_inner .fix_icon {
+    width: 100%;
+    height: 89px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-header .fix .fix_inner ul.gnb{
+
+header .fix .fix_inner ul.gnb {
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: space-between;
 }
 
-header .fix .fix_inner ul.gnb li{
+header .fix .fix_inner ul.gnb li {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -203,29 +214,33 @@ header .fix .fix_inner ul.gnb li{
     gap: 30px;
     /* background: #ccc; */
 }
-header .fix .fix_inner ul.gnb>li>a{
+
+header .fix .fix_inner ul.gnb>li>a {
     width: 100%;
     height: 50px;
     text-align: center;
     line-height: 50px;
     font-weight: 600;
 }
-header .fix .fix_inner ul.gnb>li:hover>a{
+
+header .fix .fix_inner ul.gnb>li:hover>a {
     border-bottom: 2px solid var(--main-skyblue);
 }
 
 
-header .fix .fix_inner ul.gnb li ul.snb{
+header .fix .fix_inner ul.gnb li ul.snb {
     width: 100%;
     /* background: yellow; */
     display: flex;
     flex-direction: column;
 }
-header .fix .fix_inner ul.gnb li ul.snb li{
+
+header .fix .fix_inner ul.gnb li ul.snb li {
     width: 100%;
     /* background: blue; */
 }
-header .fix .fix_inner ul.gnb li ul.snb li a{
+
+header .fix .fix_inner ul.gnb li ul.snb li a {
     display: block;
     width: 100%;
     height: 45px;
@@ -235,8 +250,9 @@ header .fix .fix_inner ul.gnb li ul.snb li a{
 
 
 
-header .fix .fix_inner ul.gnb li .fix_img{
-    width: 180px; height: 180px;
+header .fix .fix_inner ul.gnb li .fix_img {
+    width: 180px;
+    height: 180px;
     background: purple;
     border-radius: 50%;
 }
@@ -260,12 +276,13 @@ footer {
     justify-content: space-between;
     gap: 150px;
 }
-footer p{
+
+footer p {
     text-align: center;
     opacity: .5;
 }
 
-footer .subscribe{
+footer .subscribe {
     width: 670px;
     height: 100px;
     border-radius: 50px;
@@ -276,17 +293,18 @@ footer .subscribe{
     justify-content: center;
 }
 
-footer .subscribe .subscribe_inner{
- width: 638px;
- height: 68px;
- background: #fff;
- border-radius: 50px;
- padding: 0 15px 0 30px;
- display: flex;
- align-items: center;
- cursor: pointer;
+footer .subscribe .subscribe_inner {
+    width: 638px;
+    height: 68px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 0 15px 0 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
-footer .subscribe .subscribe_inner #email{
+
+footer .subscribe .subscribe_inner #email {
     width: 448px;
     height: 100%;
     border-radius: 50px;
@@ -295,7 +313,8 @@ footer .subscribe .subscribe_inner #email{
     font-size: 1.1rem;
     font-weight: 500;
 }
-footer .subscribe .subscribe_inner>button{
+
+footer .subscribe .subscribe_inner>button {
     width: 150px;
     height: 50px;
     background: var(--main-black);
@@ -305,19 +324,21 @@ footer .subscribe .subscribe_inner>button{
     color: #fff;
 }
 
-footer .sns{
+footer .sns {
     width: 1280px;
     height: 105px;
     position: relative;
 }
-footer .sns ul{
+
+footer .sns ul {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-footer .sns ul li a{
+
+footer .sns ul li a {
     display: inline-block;
     font-family: var(--Stunning);
     padding: 17px 38px;
@@ -326,12 +347,11 @@ footer .sns ul li a{
     border-radius: 100px;
     position: relative;
 }
-footer .sns ul li:nth-child(3) a{
+
+footer .sns ul li:nth-child(3) a {
     position: absolute;
     transform: rotate(20deg) scaleY(-1);
     transform-origin: right bottom;
-    bottom: 40px; right: 715px;
+    bottom: 40px;
+    right: 715px;
 }
-
-
-
