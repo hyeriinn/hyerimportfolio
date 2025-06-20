@@ -42,17 +42,45 @@
 }
 
 .inner .tit .title_bottom .next {
-    /* width: 206px; */
-    background: #0D7BD4;
+    appearance: none;
+    /* 기본 화살표 제거 */
+    -webkit-appearance: none;
+    /* Safari */
+    -moz-appearance: none;
+
+    background-image: url('../img/arrow_down_blue.svg');
+    background-size: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 210px;
+    height: 48px;
+    background-color: var(--main-white);
     border-radius: 50px;
     display: flex;
     align-items: center;
     gap: 24px;
     padding-left: 20px;
     box-shadow: 0px 2px 4px 0px rgba(61, 54, 63, 0.15);
+    color: #0D7BD4;
+    border:2px solid #0D7BD4;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.inner .tit .title_bottom .next p {
+.next:hover {
+  border-color: #888;
+}
+
+.next:focus {
+  outline: none;
+  border-color: #3c82f6;
+  box-shadow: 0 0 0 3px rgba(60, 130, 246, 0.3);
+}
+
+/* .inner .tit .title_bottom .next p {
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--main-white);
@@ -66,7 +94,7 @@
     border-radius: 50%;
     border: 1.5px solid #0D7BD4;
 }
-
+ */
 
 /* notice */
 .notice {
@@ -1345,7 +1373,8 @@ ul.noticeAni {
 
 .inner .tit .title_bottom .more_next {
     /* width: 206px; */
-    background: #F8E97C;
+    background: var(--main-white);
+    border: 2px solid var(--main-black);
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -1366,7 +1395,7 @@ ul.noticeAni {
     height: 48px;
     background: var(--main-white);
     border-radius: 50%;
-    border: 1.5px solid #F8E97C;
+    /* border: 1.5px solid #F8E97C; */
 }
 
 

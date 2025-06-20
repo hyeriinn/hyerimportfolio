@@ -359,28 +359,29 @@
                             <img src="img/route_subtitle_title_icon.png" alt="돋보기">
                         </h2>
                         <div class="title_btn">
-                            <a class="next">
-                                <div class="dropdown" id="regionDropdown">
-                                    <div class="dropdown-toggle">여행 지역</div>
-                                    <ul class="dropdown-menu">
-                                        <li>부산</li>
-                                        <li>인천</li>
-                                        <li>울산</li>
-                                        <li class="selected">제주</li>
-                                        <li>경기</li>
-                                        <li>충남</li>
-                                        <li>전북</li>
-                                        <li>전남</li>
-                                        <li>경북</li>
-                                        <li>경남</li>
-                                        <li>강원</li>
-                                    </ul>
-                                </div>
-                            </a><!-- //.next -->
-                            <a class="next">
-                                <p>해변 이름을 선택해 주세요. </p>
-                                <img src="./img/arrow_down.svg" alt="다음">
-                            </a><!-- //.next -->
+                            <select name="regionDropdown" id="regionDropdown" class="next">
+                                <option value="1">부산</option>
+                                <option value="2">인천</option>
+                                <option value="3">울산</option>
+                                <option value="4" selected>제주</option>
+                                <option value="5">경기</option>
+                                <option value="6">충남</option>
+                                <option value="7">전북</option>
+                                <option value="8">전남</option>
+                                <option value="9">경북</option>
+                                <option value="10">경남</option>
+                                <option value="11">강원</option>
+                            </select>
+                            <select name="oceanDropdown" id="oceanDropdown" class="next">
+                                <option value="1">협재해수욕장</option>
+                                <option value="2">함덕해수욕장</option>
+                                <option value="3">이호테우해수욕장</option>
+                                <option value="4" selected>삼양해수욕장</option>
+                                <option value="5">금능해수욕장</option>
+                                <option value="6">곽지해수욕장</option>
+                                <option value="7">김녕해수욕장</option>
+                                <option value="8">월정해수욕장</option>
+                            </select>
                         </div>
                     </div><!-- //.title_bottom -->
                 </div><!-- //.tit -->
@@ -472,10 +473,19 @@
                             모래? 갯벌? 암석? 취향대로!
                             <img src="./img/congest_icon.png" alt="해변">
                         </h2>
-                        <a href="#" class="next">
-                            <p>다른 지역으로 설정 </p>
-                            <img src="./img/arrow_down.svg" alt="다음">
-                        </a>
+                         <select name="regionDropdown" id="regionDropdown" class="next">
+                                <option value="1">부산</option>
+                                <option value="2">인천</option>
+                                <option value="3">울산</option>
+                                <option value="4" >제주</option>
+                                <option value="5">경기</option>
+                                <option value="6">충남</option>
+                                <option value="7">전북</option>
+                                <option value="8">전남</option>
+                                <option value="9">경북</option>
+                                <option value="10">경남</option>
+                                <option value="11" selected>강원</option>
+                            </select>
                     </div><!-- //.title_bottom -->
                 </div><!-- //.tit -->
                 <article class="congest_contents">
@@ -585,14 +595,33 @@
                             해변 주변 맛집 알아보기<img src="img/route_subtitle_title_icon3.png" alt="식사">
                         </h2>
                         <div class="title_btn">
-                            <a class="next">
-                                <p>여행 지역</p>
-                                <img src="./img/arrow_down.svg" alt="다음">
-                            </a><!-- //.next -->
-                            <a class="next">
-                                <p>해변 이름을 선택해 주세요. </p>
-                                <img src="./img/arrow_down.svg" alt="다음">
-                            </a><!-- //.next -->
+                               <select name="regionDropdown" id="regionDropdown" class="next">
+                                <option value="1">부산</option>
+                                <option value="2">인천</option>
+                                <option value="3">울산</option>
+                                <option value="4" >제주</option>
+                                <option value="5">경기</option>
+                                <option value="6">충남</option>
+                                <option value="7">전북</option>
+                                <option value="8">전남</option>
+                                <option value="9">경북</option>
+                                <option value="10">경남</option>
+                                <option value="11" selected>강원</option>
+                            </select>
+                            <select name="oceanDropdown" id="oceanDropdown" class="next">
+                                <option value="1" selected>강문해변</option>
+                                <option value="2">주문진해변</option>
+                                <option value="3">소돌해변</option>
+                                <option value="4" selected>연곡해변</option>
+                                <option value="5">사천해변 </option>
+                                <option value="6">경포해변</option>
+                                <option value="7">안목해변</option>
+                                <option value="8">남항진해변</option>
+                                 <option value="8">남항진해변</option>
+                                  <option value="8">정동진 해변</option>
+                                   <option value="8">금진해변 </option>
+                                    <option value="8">옥계해변 </option>
+                            </select>
                         </div>
                     </div><!-- //.title_bottom -->
                 </div><!-- //.tit -->
@@ -714,7 +743,7 @@
                             바다에서 만날 수 있는 국내 멸종위기동물들
                             <img src="img/route_subtitle_title_icon4.png" alt="사진기">
                         </h2>
-                        <a href="#" class="next more_next">
+                        <a href="#" class="more_next">
                             <p>더 많은 동·식물들 알아보기 </p>
                             <img src="./img/arrow_right_dark.svg" alt="다음">
                         </a>
