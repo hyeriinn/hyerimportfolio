@@ -268,7 +268,7 @@ section h2 {
 #profile {
     width: 100%;
     position: relative;
-    min-height: 240vh;
+    min-height: 600vh;
 }
 
 #profile .profile_contents {
@@ -601,7 +601,7 @@ transform: translateY(0); } */
     gap: 50px;
     background: #FFFFFC;
     padding-right: 300px;
-    height: 500vh;
+    height: 600vh;
 }
 
 

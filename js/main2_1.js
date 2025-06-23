@@ -103,87 +103,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const profileTL = gsap.timeline();
   profileTL
-    .from(".profile_contents .info", {
-      x: -100,
-      y: -100,
-      autoAlpha: 0,
-      duration: 0.6,
-    })
-    .from(".profile_contents .greet", {
-      x: -100,
-      autoAlpha: 0,
-      duration: 0.6,
-    })
-    .from(".profile_contents .personality", {
-      x: 100,
-      y: -100,
-      autoAlpha: 0,
-      duration: 0.6,
-    })
-    .from(".profile_contents .skill", {
-      x: -100,
-      y: 100,
-      autoAlpha: 0,
-      duration: 0.6,
-    })
-    .from(".profile_contents .certificate", {
-      x: 100,
-      y: 100,
-      autoAlpha: 0,
-      duration: 0.6,
-    })
-    .to(".rock", {
-      x: () => -window.innerWidth / 2,
-      opacity: 0.4,
-      filter: "blur(8px)",
-      duration: 0.6,
-    });
-  ScrollTrigger.create(
-    {
-      animation: profileTL,
-      trigger: ".profile_contents",
-      start: "top top",
-      end: "+=1000", // 전체 애니메이션이 끝날 만큼의 충분한 길이
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-      // markers: true, // 디버깅용
-      onEnter: () => rock.classList.add("behind_profile"),
-      onLeaveBack: () => {
-        rock.classList.remove("behind_profile"),
-          gsap.set(rock, { filter: 'blur(0)', opacity: 1 })
-      },
-      onEnterBack: () => {gsap.set(rock, { filter: 'blur(0)', opacity: 1 })}
-    }
+    .from(".profile_contents .info", { x: -100, y: -100, autoAlpha: 0, duration: 1.2 })
+    .from(".profile_contents .greet", { x: -100, autoAlpha: 0, duration: 1.2 })
+    .from(".profile_contents .personality", { x: 100, y: -100, autoAlpha: 0, duration: 1.2 })
+    .from(".profile_contents .skill", { x: -100, y: 100, autoAlpha: 0, duration: 1.2 })
+    .from(".profile_contents .certificate", { x: 100, y: 100, autoAlpha: 0, duration: 1.2 });
 
-  );
-/*   VanillaTilt.init(document.querySelector(".profile_contents"), {
-    max: 15,
-    speed: 400,
-    glare: false,
-    "max-glare": 0.2,
-  }) */
-  // ✅ rock - projects 진입 시 이동
-
-  const projectTL = gsap.timeline();
-  projectTL.from(".rock", { opacity: 0.4, filter: "blur(8px)", });
-
-
-  gsap.to(rock, {
-    // x: () => -window.innerWidth / 2,
-    scrollTrigger: {
-      trigger: "#projects",
-      start: "top top",
-      end: "bottom bottom",
-      // pin: true,
-      // pinSpacing: false,
-      scrub: true,
-      // markers: true, // 디버깅용
+  ScrollTrigger.create({
+    animation: profileTL,
+    trigger: ".profile_contents",
+    start: "top top",
+    end: "+=3000", // 충분히 길게
+    scrub: true,
+    pin: true,
+    anticipatePin: 1,
+    markers: true, // 디버깅용
+    onEnter: () => rock.classList.add("behind_profile"),
+    onLeaveBack: () => {
+      rock.classList.remove("behind_profile"),
+        gsap.set(rock, { filter: 'blur(0)', opacity: 1 })
     },
+    onEnterBack: () => { gsap.set(rock, { filter: 'blur(0)', opacity: 1 }) }
+  });
+
+  // 🔥 rock 이동 + 블러 "같이" 진행, profile 끝나고 시작
+  gsap.to(".rock", {
+    x: () => -window.innerWidth / 2,
     opacity: 0.4,
     filter: "blur(8px)",
-
+    scrollTrigger: {
+      trigger: ".profile_contents",
+      start: "bottom top", // ⭐ profile 애니 끝난 후 rock 이동 시작
+      end: "+=1500", // 이동 거리 (스크롤 길이)
+      scrub: true,
+      markers: true // 디버깅용
+    }
   });
+
 
   const SIDEBAR = document.querySelector(".project_left");
   const TRIGGER = document.querySelector(".projects_all");
@@ -197,13 +153,13 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollTrigger.create({
     trigger: "#projects",      // ★ 고정 범위를 projects 전체 섹션으로
     start: "top top",        // ★ 뷰포트 탑에 닿을 때부터
-    end: "bottom bottom",  // ★ 섹션 끝까지
+    end: () => "+=" + document.querySelector("#projects").scrollHeight, // ✅ 스크롤 전체 길이로 끝을 강제 지정
     pin: ".project_left",  // ★ .project_left 요소를 고정
     pinSpacing: false,
     scrub: true,             // ★ 스크럽 넣어 스크롤과 동기화
     // markers: true           // (원하면 디버깅용)
-    onEnter: () => { gsap.set('nav ul li', { display : 'none'}) },
-    onLeaveBack: () => { gsap.set('nav ul li', { display : 'block' }) }
+    onEnter: () => { gsap.set('nav ul li', { display: 'none' }) },
+    onLeaveBack: () => { gsap.set('nav ul li', { display: 'block' }) }
   });
 
   CONTENT_ITEMS.forEach((content, index) => {
