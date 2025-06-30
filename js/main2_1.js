@@ -158,8 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
     pinSpacing: false,
     scrub: true,             // ★ 스크럽 넣어 스크롤과 동기화
     // markers: true           // (원하면 디버깅용)
-    onEnter: () => { gsap.set('nav ul li', { display: 'none' }) },
-    onLeaveBack: () => { gsap.set('nav ul li', { display: 'block' }) }
+    onEnter: () => gsap.to('nav ul li', { autoAlpha: 0, duration: 0.5 }), // 숨기기
+    onLeaveBack: () => gsap.to('nav ul li', { autoAlpha: 1, duration: 0.5 }) // 다시 보이기
   });
 
   CONTENT_ITEMS.forEach((content, index) => {
@@ -182,5 +182,12 @@ document.addEventListener("DOMContentLoaded", () => {
     onEnterBack: () => gsap.to(rock, { opacity: 0.4, duration: 0.5 }),
 
     onLeaveBack: () => { gsap.set('nav ul li', { display: 'block' }) }
+  });
+  ScrollTrigger.create({
+    trigger: "#contact",
+    start: "top center",
+    end: "bottom center",
+    onEnter: () => gsap.to('.project_left', { autoAlpha: 0, duration: 0.5 }), // 숨기기
+    onLeaveBack: () => gsap.to('.project_left', { autoAlpha: 1, duration: 0.5 }) // 다시 보이기
   });
 });

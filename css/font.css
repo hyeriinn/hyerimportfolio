@@ -48,4 +48,21 @@ font-family: "Pretendard Variable";
     font-style: bold;
 }
 
-/* 핀픽 */
+@font-face {
+    font-family: 'SokchoBadaDotum';
+    src: url('../font/SokchoBadaDotum.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'HakgyoansimMulgyeol';
+    src: url('../font/HakgyoansimMulgyeolR.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+

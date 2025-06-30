@@ -43,8 +43,9 @@ body {
     position: relative;
     /* overflow: hidden; */
 }
+
 .wrap::selection {
-     background: var(--sub-green);
+    background: var(--sub-green);
     color: var(--main-black);
 }
 
@@ -669,17 +670,18 @@ transform: translateY(0); } */
     font-family: 'Stunning';
 }
 
-#projects .project_left .project_sub ul li.sub5 a h3 {
-    font-family: var(--suit);
-}
-
-#projects .project_left .project_sub ul li.sub5 a h3 {
+#projects .project_left .project_sub ul li.sub4 a h3 {
     font-family: "DM Serif Display", serif;
 }
 
-#projects .project_left .project_sub ul li.sub4 a h3 {}
+#projects .project_left .project_sub ul li.sub5 a h3 {
+    font-family: 'SokchoBadaDotum';
+}
 
-#projects .project_left .project_sub ul li.sub5 a h3 {}
+#projects .project_left .project_sub ul li.sub6 a h3 {
+    font-family: var(--suit);
+}
+
 
 #projects .project_left .project_sub ul li a .sub_nav {
     opacity: 0;
@@ -751,11 +753,11 @@ transform: translateY(0); } */
     /* background: yellow; */
 }
 
-#projects .projects_all .project4 {
+#projects .projects_all .project2 {
     background: url(../img/project_frame_project4.png) center/contain no-repeat;
 }
 
-#projects .projects_all .project3 {
+#projects .projects_all .project6 {
     background: url(../img/project_frame_project4.png) center/contain no-repeat;
 
 }
@@ -1022,7 +1024,8 @@ transform: translateY(0); } */
     object-fit: cover;
 }
 
-/* project2  - fin pick*/
+/* project2 -oceantrip */
+
 #projects .projects_all .project2 .detail_contents .logo {
     background: #fff;
 }
@@ -1033,68 +1036,64 @@ transform: translateY(0); } */
 }
 
 #projects .projects_all .project2 .detail_contents .headline p {
-    display: block;
-    padding-left: 28px;
-    line-height: 1.2;
-    font-family: "Pretendard Variable";
-    text-align: left;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 36px;
+    font-family: 'Stunning';
+    font-size: 1.1rem;
+    padding-top: 24px;
 }
 
 #projects .projects_all .project2 .detail_contents .headline p b {
-    font-weight: 700;
-    color: #92A0FD;
+    color: #8AD1F4;
 }
 
-
-#projects .projects_all .project2 .detail_contents .concept .concept1 {
-    background: rgba(146, 160, 253, 0.3);
+#projects .projects_all .project2 .detail_contents .overview p {
+    line-height: 2.3;
 }
 
-#projects .projects_all .project2 .detail_contents .concept .concept2 {
-    margin-top: -24px;
-    background: rgba(146, 160, 253, 0.6);
+#projects .projects_all .project2 .detail_contents .overview p strong {
+    font-family: var(--suit);
+    font-weight: 800;
+    color: #8AD1F4;
 }
 
-#projects .projects_all .project2 .detail_contents .concept .concept3 {
-    margin-top: -24px;
-    background: rgba(146, 160, 253, 0.9);
-}
 
 #projects .projects_all .project2 .detail_contents .color ul li:nth-child(1) span {
-    background: #92A0FD;
+    background: #8AD1F4;
 }
 
 #projects .projects_all .project2 .detail_contents .color ul li:nth-child(2) span {
-    background: #00B7CF;
-}
-
-#projects .projects_all .project2 .detail_contents .color ul li:nth-child(3) span {
-    background: #333;
-}
-
-
-#projects .projects_all .project2 .detail_contents .logo .logo_box img {
-    width: 228px;
-    height: 76px;
-    object-fit: cover;
+    background: #3D363F;
 }
 
 #projects .projects_all .project2 .detail_contents .typo .typo_top p {
-    font-family: "Pretendard Variable";
-
+    font-family: 'Stunning';
 }
 
 
 #projects .projects_all .project2 .detail_contents .typo .typo_bottom {
-    font-family: "Pretendard Variable";
-}
-
-#projects .projects_all .project2 .detail_contents .overview p strong {
-    color: #92A0FD;
+    font-family: 'Stunning';
 }
 
 
-/* project3 - finpick */
+
+#projects .projects_all .project2 .detail_contents .concept .concept1 {
+    background: rgba(138, 209, 244, 0.3);
+}
+
+#projects .projects_all .project2 .detail_contents .concept .concept2 {
+    margin-top: -24px;
+    background: rgba(138, 209, 244, 0.6);
+}
+
+#projects .projects_all .project2 .detail_contents .concept .concept3 {
+    margin-top: -24px;
+    background: rgba(138, 209, 244, 0.9);
+}
+
+/* project3  - fin pick*/
 #projects .projects_all .project3 .detail_contents .logo {
     background: #fff;
 }
@@ -1105,166 +1104,239 @@ transform: translateY(0); } */
 }
 
 #projects .projects_all .project3 .detail_contents .headline p {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    line-height: 36px;
-    font-family: 'Stunning';
-    font-size: 1.1rem;
-    padding-top: 24px;
+    display: block;
+    padding-left: 28px;
+    line-height: 1.2;
+    font-family: "Pretendard Variable";
+    text-align: left;
 }
 
 #projects .projects_all .project3 .detail_contents .headline p b {
-    color: #8AD1F4;
+    font-weight: 700;
+    color: #92A0FD;
 }
-
-#projects .projects_all .project3 .detail_contents .overview p {
-    line-height: 2.3;
-}
-
-#projects .projects_all .project3 .detail_contents .overview p strong {
-    font-family: var(--suit);
-    font-weight: 800;
-    color: #8AD1F4;
-}
-
-
-#projects .projects_all .project3 .detail_contents .color ul li:nth-child(1) span {
-    background: #8AD1F4;
-}
-
-#projects .projects_all .project3 .detail_contents .color ul li:nth-child(2) span {
-    background: #3D363F;
-}
-
-#projects .projects_all .project3 .detail_contents .typo .typo_top p {
-    font-family: 'Stunning';
-}
-
-
-#projects .projects_all .project3 .detail_contents .typo .typo_bottom {
-    font-family: 'Stunning';
-}
-
 
 
 #projects .projects_all .project3 .detail_contents .concept .concept1 {
-    background: rgba(138, 209, 244, 0.3);
+    background: rgba(146, 160, 253, 0.3);
 }
 
 #projects .projects_all .project3 .detail_contents .concept .concept2 {
     margin-top: -24px;
-    background: rgba(138, 209, 244, 0.6);
+    background: rgba(146, 160, 253, 0.6);
 }
 
 #projects .projects_all .project3 .detail_contents .concept .concept3 {
     margin-top: -24px;
-    background: rgba(138, 209, 244, 0.9);
+    background: rgba(146, 160, 253, 0.9);
 }
 
-/* project4 - livart */
-
-#projects .projects_all .project4 .detail_contents .logo {
-    background: #fff;
+#projects .projects_all .project3 .detail_contents .color ul li:nth-child(1) span {
+    background: #92A0FD;
 }
 
-#projects .projects_all .project4 .detail_contents .logo h3 {
-    color: rgba(24, 25, 25, 0.5);
+#projects .projects_all .project3 .detail_contents .color ul li:nth-child(2) span {
+    background: #00B7CF;
+}
+
+#projects .projects_all .project3 .detail_contents .color ul li:nth-child(3) span {
+    background: #333;
+}
+
+
+#projects .projects_all .project3 .detail_contents .logo .logo_box img {
+    width: 228px;
+    height: 76px;
+    object-fit: cover;
+}
+
+#projects .projects_all .project3 .detail_contents .typo .typo_top p {
+    font-family: "Pretendard Variable";
 
 }
 
-#projects .projects_all .project4 .detail_contents .color ul li:nth-child(1) span {
-    background: #B6A999;
+
+#projects .projects_all .project3 .detail_contents .typo .typo_bottom {
+    font-family: "Pretendard Variable";
 }
 
-#projects .projects_all .project4 .detail_contents .color ul li:nth-child(2) span {
-
-    background: #0b5578;
-
+#projects .projects_all .project3 .detail_contents .overview p strong {
+    color: #92A0FD;
 }
+
+
+/* project4 - lamuse */
 
 #projects .projects_all .project4 .detail_contents .concept .concept1 {
-    background: rgba(182, 169, 153, 0.3);
+    background: rgba(212, 194, 178, 0.3);
 
 }
 
 #projects .projects_all .project4 .detail_contents .concept .concept2 {
     margin-top: -24px;
-    background: rgba(182, 169, 153, 0.6);
+    background: rgba(212, 194, 178, 0.6);
 
 }
 
 #projects .projects_all .project4 .detail_contents .concept .concept3 {
     margin-top: -24px;
-    background: rgba(182, 169, 153, 0.9);
-}
-
-#projects .projects_all .project5 .detail_contents .concept .concept1 {
-    background: rgba(212, 194, 178, 0.3);
-
-}
-
-#projects .projects_all .project5 .detail_contents .concept .concept2 {
-    margin-top: -24px;
-    background: rgba(212, 194, 178, 0.6);
-
-}
-
-#projects .projects_all .project5 .detail_contents .concept .concept3 {
-    margin-top: -24px;
     background: rgba(212, 194, 178, 0.9);
 }
 
-#projects .projects_all .project5 .detail_contents .color ul li:nth-child(1) span {
+#projects .projects_all .project4 .detail_contents .color ul li:nth-child(1) span {
     background: #AF040A;
 }
 
-#projects .projects_all .project5 .detail_contents .color ul li:nth-child(2) span {
+#projects .projects_all .project4 .detail_contents .color ul li:nth-child(2) span {
     background: #D4C2B2;
 }
 
-#projects .projects_all .project5 .detail_contents .color ul li:nth-child(3) span {
+#projects .projects_all .project4 .detail_contents .color ul li:nth-child(3) span {
     background: #1A1A1A;
 }
 
-#projects .projects_all .project5 .detail_contents .typo .typo_bottom {
+#projects .projects_all .project4 .detail_contents .typo .typo_bottom {
     /* color: #1B4D3F; */
     font-family: "DM Serif Display", serif;
     font-weight: 700;
 }
 
-#projects .projects_all .project5 .detail_contents .overview p strong {
+#projects .projects_all .project4 .detail_contents .overview p strong {
     color: #AF040A;
     font-family: "Pretendard Variable";
     font-weight: 700;
 
 }
 
+/* project5 - goodgoddsmarket */
+#projects .projects_all .project5 .detail_contents .logo {
+    background: #fff;
+}
+
+#projects .projects_all .project5 .detail_contents .logo h3 {
+    color: rgba(24, 25, 25, 0.5);
+
+}
+
+#projects .projects_all .project5 .detail_contents .concept .concept1 {
+    background: rgba(29, 198, 167, 0.3);
+
+}
+
+#projects .projects_all .project5 .detail_contents .concept .concept2 {
+    margin-top: -24px;
+    background: rgba(29, 198, 167, 0.6);
+
+}
+
+#projects .projects_all .project5 .detail_contents .concept .concept3 {
+    margin-top: -24px;
+    background: rgba(29, 198, 167, 0.9);
+}
+
+#projects .projects_all .project5 .detail_contents .color ul li:nth-child(1) span {
+    background: #1DC6A7;
+}
+
+#projects .projects_all .project5 .detail_contents .color ul li:nth-child(2) span {
+    background: #EC8899;
+}
+
+#projects .projects_all .project5 .detail_contents .color ul li:nth-child(3) span {
+    background: #000;
+}
+
+#projects .projects_all .project5 .detail_contents .typo .typo_bottom {
+    /* color: #1B4D3F; */
+    font-family: 'SokchoBadaDotum';
+    font-weight: 400;
+}
+
+#projects .projects_all .project5 .detail_contents .overview p strong {
+    color: #1DC6A7;
+    font-family: "Pretendard Variable";
+    font-weight: 700;
+
+}
+
+#projects .projects_all .project5 .detail_contents .headline p {
+    /* display: inline-block; */
+    /* width: 100%; */
+    /* text-align: center; */
+    /* line-height: 36px; */
+    font-family: 'HakgyoansimMulgyeol';
+    font-size: 1.5rem;
+    /* padding-top: 18px; */
+}
+
+#projects .projects_all .project5 .detail_contents .headline p b {
+    color: #1DC6A7;
+}
 
 
-#projects .projects_all .project4 .detail_contents .typo .typo_bottom {
+/* project6 - livart */
+
+#projects .projects_all .project6 .detail_contents .typo .typo_bottom {
     /* color: #1B4D3F; */
     font-family: var(--suit);
     font-weight: 700;
 }
 
-#projects .projects_all .project4 .detail_contents .headline p {
+#projects .projects_all .project6 .detail_contents .headline p {
     font-family: var(--suit);
     line-height: 1;
 
 }
 
 
-#projects .projects_all .project4 .detail_contents .overview p {
+#projects .projects_all .project6 .detail_contents .overview p {
     font-family: var(--suit);
 
     line-height: 1.8;
 }
 
-#projects .projects_all .project4 .detail_contents .overview p strong {
+#projects .projects_all .project6 .detail_contents .overview p strong {
     color: #0b5578;
     font-weight: 700;
 }
+
+
+
+#projects .projects_all .project6 .detail_contents .logo {
+    background: #fff;
+}
+
+#projects .projects_all .project6 .detail_contents .logo h3 {
+    color: rgba(24, 25, 25, 0.5);
+
+}
+
+#projects .projects_all .project6 .detail_contents .color ul li:nth-child(1) span {
+    background: #B6A999;
+}
+
+#projects .projects_all .project6 .detail_contents .color ul li:nth-child(2) span {
+
+    background: #0b5578;
+
+}
+
+#projects .projects_all .project6 .detail_contents .concept .concept1 {
+    background: rgba(182, 169, 153, 0.3);
+
+}
+
+#projects .projects_all .project6 .detail_contents .concept .concept2 {
+    margin-top: -24px;
+    background: rgba(182, 169, 153, 0.6);
+
+}
+
+#projects .projects_all .project6 .detail_contents .concept .concept3 {
+    margin-top: -24px;
+    background: rgba(182, 169, 153, 0.9);
+}
+
 
 
 #projects .project_detail .project_go {
@@ -1277,12 +1349,12 @@ transform: translateY(0); } */
     gap: 8px;
 }
 
-#projects .project4 .project_go {
+#projects .project2 .project_go {
     justify-content: flex-end;
 
 }
 
-#projects .project3 .project_go {
+#projects .project6 .project_go {
     justify-content: flex-end;
 
 }
@@ -1351,7 +1423,7 @@ transform: translateY(0); } */
 
 footer {
     width: 100%;
-    height: 150vh;
+    height: 120vh;
     position: relative;
     background: url(../img/footer_img.jpg) center/cover;
     overflow: hidden;
@@ -1363,7 +1435,7 @@ footer .footer_txt {
     width: 772px;
     position: relative;
     left: 50%;
-    top: 30%;
+    top: 40%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
@@ -1388,7 +1460,7 @@ footer .footer_txt .mail {
     width: 772px;
     height: 98px;
     border-radius: 45px;
-    background: #E6E5DB;
+    background: #eeede5;
     padding: 10px;
 }
 
@@ -1431,7 +1503,7 @@ footer .footer_txt .mail .mail_inner a {
 footer .circle {
     position: absolute;
     left: 15%;
-    top: 50%;
+    top: 60%;
     transform: translateX(-50%);
     width: 1400px;
     height: 1400px;
@@ -1457,7 +1529,7 @@ footer .circle {
 text {
     font-family: 'Montserrat', sans-serif;
     fill: white;
-    font-size: 48px;
+    font-size: 36px;
     letter-spacing: 12px;
 }
 
