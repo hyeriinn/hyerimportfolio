@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scrub: true,
     pin: true,
     anticipatePin: 1,
-    markers: true, // 디버깅용
+    // markers: true,s // 디버깅용
     onEnter: () => rock.classList.add("behind_profile"),
     onLeaveBack: () => {
       rock.classList.remove("behind_profile"),
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "bottom top", // ⭐ profile 애니 끝난 후 rock 이동 시작
       end: "+=1500", // 이동 거리 (스크롤 길이)
       scrub: true,
-      markers: true // 디버깅용
+      // markers: true // 디버깅용
     }
   });
 
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   ScrollTrigger.create({
     trigger: "#contact",
-    start: "top center",
+    start: "top bottom",
     end: "bottom center",
     onEnter: () => gsap.to('.project_left', { autoAlpha: 0, duration: 0.5 }), // 숨기기
     onLeaveBack: () => gsap.to('.project_left', { autoAlpha: 1, duration: 0.5 }) // 다시 보이기
