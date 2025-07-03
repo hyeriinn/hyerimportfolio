@@ -6,7 +6,11 @@ $(function () {
     frameRate: 10,
   });
 })
+
 document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+
   AOS.init();
 
   //햄버거 메뉴
@@ -148,17 +152,34 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
   }
-  /* photo_slide */
-  /*   let photo = new Swiper(".photo_slide", {
-      loop: true,
-      centeredSlides: true,
-      spaceBetween: 100,
-      slidesPerView: 1,
-      navigation: {
-        nextEl: ".photo_slide .prev_next .next",
-        prevEl: ".photo_slide .prev_next .prev",
-      },
-    }); */
+
+  /* CARD */
+
+
+
+
+
+  let rotation = { value: 0 };
+
+  gsap.to(rotation, {
+    value: 360,
+    scrollTrigger: {
+      trigger: ".place", // 섹션
+      start: "top top",
+      end: "+=2000", // 스크롤 거리
+      scrub: true,
+      pin: true,
+      anticipatePin: 1
+    },
+    onUpdate: () => {
+      // 궤도 회전
+      gsap.set(".place_orbit", { rotation: rotation.value });
+      // 카드 반대 방향 회전 (카드 정면 유지)
+      // gsap.set(".place_orbit li", { rotation: -rotation.value });
+    },
+    ease: "none"
+  });
+
 
   const animalInfo = [
     {
